@@ -66,18 +66,18 @@ def display_page(pathname):
     elif pathname == "/reporting-bot":
         return reporting_bot_ui()
     elif pathname == "/run-validator":
-        return html.H2("Run Validator - Coming Soon")
+        return html.H2("Run Validator - Enterprise Feature")
     elif pathname == "/validation-history":
-        return html.H2("Validation History - Coming Soon")
+        return html.H2("Validation History -  Enterprise Feature")
     elif pathname == "/log-analytics":
         return log_analytics_ui()
     elif pathname == "/log-analytics-history":
         return log_analytics_history_ui()
     elif pathname == "/automation":
-        return html.H2("Automation - Coming Soon")
+        return html.H2("Automation -  Enterprise Feature")
     elif pathname == "/help":
-        return html.H2("Help - Coming Soon")
-    return html.H2("Coming Soon")
+        return html.H2("Help -  Enterprise Feature")
+    return html.H2(" Enterprise Feature")
 
 
 # ✅ Register chatbot callbacks
