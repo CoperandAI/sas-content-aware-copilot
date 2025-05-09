@@ -86,9 +86,9 @@ The **open-source edition** includes:
 The **enterprise edition** expands capabilities with:
 - **Automated validation** of outputs and reconciliations
 - **Workflow automation** (issue triage, rerun triggers, QA tasks)
-- **Integration with Python modules** (issue triage, rerun triggers, QA tasks)
+- **Integration with Python modules** 
 - **AI Assisted Test Automation**
-- **SAS VIYA custom flow steps** (issue triage, rerun triggers, QA tasks)
+- **SAS VIYA custom flow steps** 
 - **CI/CD Orchestration**
 - Support for **large-scale indexing** and advanced LLM orchestration
 
@@ -97,7 +97,7 @@ The **enterprise edition** expands capabilities with:
 SAS Content-Aware Copilot is designed to work with both:
 
 - **SAS 9** (traditional environment): integrates via file system, metadata exports, and log file processing
-- **SAS Viya**: integrates via Viya APIs, SAS Informaion Catalog, CAS tables, Git-integrated pipelines, and cloud-native services
+- **SAS Viya**: integrates via Viya APIs, SAS Information Catalog, CAS tables, Git-integrated pipelines, and cloud-native services
 
 This flexibility ensures seamless adoption in hybrid environments or during platform migration.
 This solution can run as a stand alone-application or integrated in SAS flows. 
