@@ -1,0 +1,27 @@
+/* Navbar styles */
+.navbar-nav .nav-link,
+.dropdown-menu .dropdown-item {
+    font-size: 15px !important;
+    font-weight: 500 !important; /* Medium weight for a professional look */
+    color: white !important;
+    font-family: 'Arial', sans-serif !important; /* Change to a sleek font */
+}
+
+/* Navbar dropdown background */
+.dropdown-menu {
+    background-color: #512da8 !important; /* Slightly darker shade of purple */
+    border-radius: 5px !important; /* Soft rounded corners */
+}
+
+/* Hover effect */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #673ab7 !important;
+}
+
+/* Navbar brand (title) */
+.navbar-brand {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: white !important;
+    font-family: 'Arial', sans-serif !important;
+}
