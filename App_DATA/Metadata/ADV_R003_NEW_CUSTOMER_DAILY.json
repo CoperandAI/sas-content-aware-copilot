@@ -1,0 +1,47 @@
+{
+  "script_name": "ADV_R003_NEW_CUSTOMER_DAILY.sas",
+  "description": "Identifies new customers who made their first purchase on the reporting date.",
+  "steps": [
+    {
+      "step_number": 1,
+      "step_type": "PROC SQL",
+      "description": "Extract new customers based on their first purchase date and join with geographic details.",
+      "input_sources": ["sas_dw.DimCustomer", "sas_dw.DimGeography"],
+      "key_variables": ["CustomerKey", "FirstName", "LastName", "DateFirstPurchase", "GeographyKey"],
+      "operations": [
+        "Filter customers with DateFirstPurchase = report_date",
+        "Join with geography details"
+      ],
+      "output": "WORK.new_customers",
+      "sas_code": "PROC SQL;\nCREATE TABLE WORK.new_customers AS\nSELECT c.CustomerKey, c.FirstName, c.LastName, c.DateFirstPurchase, g.City, g.StateProvinceName, g.EnglishCountryRegionName\nFROM sas_dw.DimCustomer c\nJOIN sas_dw.DimGeography g ON c.GeographyKey = g.GeographyKey\nWHERE c.DateFirstPurchase = '&report_date';\nQUIT;"
+    },
+    {
+      "step_number": 2,
+      "step_type": "PROC FREQ",
+      "description": "Generate frequency distribution of new customers by country.",
+      "input_sources": ["WORK.new_customers"],
+      "key_variables": ["EnglishCountryRegionName"],
+      "operations": ["Count customers by country"],
+      "output": "WORK.customer_country_freq",
+      "sas_code": "PROC FREQ DATA=WORK.new_customers;\nTABLES EnglishCountryRegionName / OUT=WORK.customer_country_freq;\nRUN;"
+    },
+    {
+      "step_number": 3,
+      "step_type": "PROC EXPORT",
+      "description": "Export the detailed new customer report to CSV format.",
+      "input_sources": ["WORK.new_customers"],
+      "output": "new_customers_report.csv",
+      "export_format": "CSV",
+      "sas_code": "PROC EXPORT DATA=WORK.new_customers\nOUTFILE='new_customers_report.csv'\nDBMS=CSV REPLACE;\nRUN;"
+    },
+    {
+      "step_number": 4,
+      "step_type": "PROC EXPORT",
+      "description": "Export the frequency distribution report to CSV format.",
+      "input_sources": ["WORK.customer_country_freq"],
+      "output": "customer_country_freq.csv",
+      "export_format": "CSV",
+      "sas_code": "PROC EXPORT DATA=WORK.customer_country_freq\nOUTFILE='customer_country_freq.csv'\nDBMS=CSV REPLACE;\nRUN;"
+    }
+  ]
+}

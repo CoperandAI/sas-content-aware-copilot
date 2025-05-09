@@ -1,0 +1,23 @@
+{
+    "reconciliation_name": "Daily to Weekly Sales Reconciliation",
+    "reconciliation_type": "daily_to_weekly_csv",
+    "description": "This reconciliation sums up daily sales for a week and compares them with the weekly sales report.",
+    "script_path": "adv_python_files",
+    "execution_script": "reconciliation_tools.py",
+    "execution_function": "reconcile_daily_to_weekly",
+    "parameters": {
+        "reports_path": "adv_report_files",
+        "daily_report_pattern": "ADV_R001_SALES_DAILY_SUMMARY_{date}.csv",
+        "weekly_report_pattern": "ADV_R006_SALES_WEEKLY_SUMMARY_{date}.csv",
+        "date_format": "%d%b%Y",
+        "date_range": 7,
+        "reconciling_fields": {
+            "SalesAmount_Sum": "sum",
+            "OrderQuantity_Sum": "sum"
+        }
+    },
+    "database": {
+        "db_path": "reconciliation_results.db",
+        "summary_table": "reconciliation_summary"
+    }
+}

@@ -1,0 +1,192 @@
+NOTE: PROCEDURE PRINTTO used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: Table WORK.NEW_CUSTOMERS_REPORT created, with 6 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.28 seconds
+      cpu time            0.26 seconds
+      
+
+
+NOTE: There were 6 observations read from the data set WORK.NEW_CUSTOMERS_REPORT.
+NOTE: The data set WORK.NEW_CUSTOMERS_SUMMARY has 4 observations and 3 variables.
+NOTE: PROCEDURE FREQ used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+      
+
+
+281         /**********************************************************************
+282         *   PRODUCT:   SAS
+283         *   VERSION:   9.3
+284         *   CREATOR:   External File Interface
+285         *   DATE:      07MAY12
+286         *   DESC:      Generated SAS Datastep Code
+287         *   TEMPLATE SOURCE:  (None Specified.)
+288         ***********************************************************************/
+289            data _null_;
+290            %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+291            %let _EFIREC_ = 0;     /* clear export record count macro variable */
+292            file 'Z:\Shared with
+292      ! VM\Log_Analytics\reports\ADV_R003_NEW_CUSTOMER_DAILY_11may2012.csv'
+292      ! delimiter=',' DSD DROPOVER lrecl=32767;
+293            if _n_ = 1 then        /* write column names or labels */
+8                                     The SAS System              15:32 Monday, May 7, 2012
+
+294             do;
+295               put
+296                  "CustomerKey"
+297               ','
+298                  "FirstName"
+299               ','
+300                  "LastName"
+301               ','
+302                  "EmailAddress"
+303               ','
+304                  "City"
+305               ','
+306                  "StateProvinceName"
+307               ','
+308                  "Country"
+309               ','
+310                  "DateFirstPurchase"
+311               ;
+312             end;
+313           set  WORK.NEW_CUSTOMERS_REPORT   end=EFIEOD;
+314               format CustomerKey 11. ;
+315               format FirstName $50. ;
+316               format LastName $50. ;
+317               format EmailAddress $50. ;
+318               format City $30. ;
+319               format StateProvinceName $50. ;
+320               format Country $50. ;
+321               format DateFirstPurchase $10. ;
+322             do;
+323               EFIOUT + 1;
+324               put CustomerKey @;
+325               put FirstName $ @;
+326               put LastName $ @;
+327               put EmailAddress $ @;
+328               put City $ @;
+329               put StateProvinceName $ @;
+330               put Country $ @;
+331               put DateFirstPurchase $ ;
+332               ;
+333             end;
+334            if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro
+334      ! variable */
+335            if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+336            run;
+
+NOTE: The file 'Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R003_NEW_CUSTOMER_DAILY_11may2012.csv' is:
+      
+      Filename=Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R003_NEW_CUSTOMER_DAILY_11may2012.csv,
+      RECFM=V,LRECL=32767,File Size (bytes)=0,
+9                                     The SAS System              15:32 Monday, May 7, 2012
+
+      Last Modified=04Mar2025:18:51:14,
+      Create Time=04Mar2025:18:51:14
+
+NOTE: 7 records were written to the file 'Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R003_NEW_CUSTOMER_DAILY_11may2012.csv'.
+      The minimum record length was 83.
+      The maximum record length was 106.
+NOTE: There were 6 observations read from the data set WORK.NEW_CUSTOMERS_REPORT.
+NOTE: DATA statement used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.03 seconds
+      
+
+6 records created in Z:\Shared with 
+VM\Log_Analytics\reports\ADV_R003_NEW_CUSTOMER_DAILY_11may2012.csv from 
+WORK.NEW_CUSTOMERS_REPORT.
+  
+  
+NOTE: "Z:\Shared with VM\Log_Analytics\reports\ADV_R003_NEW_CUSTOMER_DAILY_11may2012.csv" 
+      file was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.09 seconds
+      
+
+
+344         /**********************************************************************
+345         *   PRODUCT:   SAS
+346         *   VERSION:   9.3
+347         *   CREATOR:   External File Interface
+348         *   DATE:      07MAY12
+349         *   DESC:      Generated SAS Datastep Code
+350         *   TEMPLATE SOURCE:  (None Specified.)
+351         ***********************************************************************/
+352            data _null_;
+353            %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+354            %let _EFIREC_ = 0;     /* clear export record count macro variable */
+355            file 'Z:\Shared with
+355      ! VM\Log_Analytics\reports\ADV_R003_NEW_CUSTOMER_DAILY_SUMMARY_11may2012.csv'
+355      ! delimiter=',' DSD DROPOVER lrecl=32767;
+356            if _n_ = 1 then        /* write column names or labels */
+357             do;
+358               put
+359                  "Country"
+360               ','
+361                  "COUNT"
+362               ','
+363                  "PERCENT"
+364               ;
+365             end;
+366           set  WORK.NEW_CUSTOMERS_SUMMARY   end=EFIEOD;
+10                                    The SAS System              15:32 Monday, May 7, 2012
+
+367               format Country $50. ;
+368               format COUNT best12. ;
+369               format PERCENT best12. ;
+370             do;
+371               EFIOUT + 1;
+372               put Country $ @;
+373               put COUNT @;
+374               put PERCENT ;
+375               ;
+376             end;
+377            if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro
+377      ! variable */
+378            if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+379            run;
+
+NOTE: The file 'Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R003_NEW_CUSTOMER_DAILY_SUMMARY_11may2012.csv' is:
+      
+      Filename=Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R003_NEW_CUSTOMER_DAILY_SUMMARY_11may2012.csv,
+      RECFM=V,LRECL=32767,File Size (bytes)=0,
+      Last Modified=04Mar2025:18:51:14,
+      Create Time=04Mar2025:18:51:14
+
+NOTE: 5 records were written to the file 'Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R003_NEW_CUSTOMER_DAILY_SUMMARY_11may2012.csv'.
+      The minimum record length was 21.
+      The maximum record length was 29.
+NOTE: There were 4 observations read from the data set WORK.NEW_CUSTOMERS_SUMMARY.
+NOTE: DATA statement used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.04 seconds
+      
+
+4 records created in Z:\Shared with 
+VM\Log_Analytics\reports\ADV_R003_NEW_CUSTOMER_DAILY_SUMMARY_11may2012.csv from 
+WORK.NEW_CUSTOMERS_SUMMARY.
+  
+  
+NOTE: "Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R003_NEW_CUSTOMER_DAILY_SUMMARY_11may2012.csv" file was 
+      successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.13 seconds
+      cpu time            0.10 seconds
+      
+
+

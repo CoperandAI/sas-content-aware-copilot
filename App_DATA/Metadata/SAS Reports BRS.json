@@ -1,0 +1,94 @@
+{
+  "sas_scripts": [
+    {
+      "name": "ADV_R001_SALES_DAILY.sas",
+      "purpose": "Extracts daily sales data and generates a summary report.",
+      "input_sources": ["sas_dw.FactInternetSales", "sas_dw.DimCustomer", "sas_dw.DimProduct", "sas_dw.DimDate"],
+      "processing_steps": [
+        "Filter sales data for the reporting date",
+        "Join with customer and product details",
+        "Summarize total sales amount and order quantity"
+      ],
+      "output": "sales_report.csv",
+      "dependencies": ["sas_dw library mapping"]
+    },
+    {
+      "name": "ADV_R002_PRODUCT_INVENTORY_DAILY.sas",
+      "purpose": "Generates an inventory report for all products in stock.",
+      "input_sources": ["sas_dw.FactProductInventory", "sas_dw.DimProduct", "sas_dw.DimDate"],
+      "processing_steps": [
+        "Filter inventory data for the reporting date",
+        "Join with product information",
+        "Aggregate total stock levels"
+      ],
+      "output": "inventory_report.csv",
+      "dependencies": ["sas_dw library mapping"]
+    },
+    {
+      "name": "ADV_R003_NEW_CUSTOMER_DAILY.sas",
+      "purpose": "Identifies new customers who made their first purchase on the reporting date.",
+      "input_sources": ["sas_dw.DimCustomer", "sas_dw.DimGeography"],
+      "processing_steps": [
+        "Extract customers with DateFirstPurchase = &report_date",
+        "Join with geographic details",
+        "Count new customers per region"
+      ],
+      "output": "new_customers_report.csv",
+      "dependencies": ["sas_dw library mapping"]
+    },
+    {
+      "name": "ADV_R004_RESELLERS_PERFORMANCE_DAILY.sas",
+      "purpose": "Analyzes reseller sales performance.",
+      "input_sources": ["sas_dw.FactResellerSales", "sas_dw.DimReseller", "sas_dw.DimDate"],
+      "processing_steps": [
+        "Filter reseller sales for the reporting date",
+        "Join with reseller details",
+        "Summarize order quantity and total revenue"
+      ],
+      "output": "reseller_report.csv",
+      "dependencies": ["sas_dw library mapping"]
+    },
+    {
+      "name": "ADV_R005_EMPL_SALES_PERFORMANCE_DAILY.sas",
+      "purpose": "Tracks employee sales performance.",
+      "input_sources": ["sas_dw.FactSalesQuota", "sas_dw.DimEmployee", "sas_dw.DimDate"],
+      "processing_steps": [
+        "Extract employee sales data for the reporting period",
+        "Join with employee details",
+        "Aggregate sales quotas"
+      ],
+      "output": "employee_report.csv",
+      "dependencies": ["sas_dw library mapping"]
+    },
+    {
+      "name": "ADV_REPORT_DAILY_BATCH.sas",
+      "purpose": "Master batch script that executes all individual report scripts sequentially.",
+      "processing_steps": [
+        "Call staging script ADV_STG_DAILY_BATCH.sas",
+        "Execute all report scripts (ADV_R001 to ADV_R005)",
+        "Log execution results"
+      ],
+      "dependencies": ["Successful execution of ADV_STG_DAILY_BATCH.sas"]
+    },
+    {
+      "name": "ADV_SAS_ENV_SETUP.sas",
+      "purpose": "Sets up SAS environment including library assignments and macro variables.",
+      "processing_steps": [
+        "Assign sas_dw library to SQL Server",
+        "Define &report_date macro",
+        "Configure data paths for report outputs"
+      ],
+      "dependencies": ["Must be executed before any report script"]
+    },
+    {
+      "name": "ADV_STG_DAILY_BATCH.sas",
+      "purpose": "Stages daily data before report execution.",
+      "processing_steps": [
+        "Extract relevant data from SQL Server into SAS work tables",
+        "Clean and transform data",
+        "Prepare staging tables for reporting scripts"
+      ],
+      "dependencies": ["sas_dw library mapping"]
+    }
+  ]
+}

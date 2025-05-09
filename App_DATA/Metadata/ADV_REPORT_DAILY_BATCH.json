@@ -1,0 +1,38 @@
+{
+  "script_name": "ADV_REPORT_DAILY_BATCH.sas",
+  "description": "Master batch script that executes all individual report scripts sequentially.",
+  "steps": [
+    {
+      "step_number": 1,
+      "step_type": "Include Environment Setup",
+      "description": "Ensures SAS environment is set up before executing reports.",
+      "operations": ["Call ADV_SAS_ENV_SETUP.sas to assign libraries and macros"],
+      "dependencies": ["ADV_SAS_ENV_SETUP.sas"],
+      "sas_code": "%INCLUDE 'ADV_SAS_ENV_SETUP.sas';"
+    },
+    {
+      "step_number": 2,
+      "step_type": "Run Staging Script",
+      "description": "Executes the staging script to prepare data before running reports.",
+      "operations": ["Call ADV_STG_DAILY_BATCH.sas to extract and transform data"],
+      "dependencies": ["ADV_STG_DAILY_BATCH.sas"],
+      "sas_code": "%INCLUDE 'ADV_STG_DAILY_BATCH.sas';"
+    },
+    {
+      "step_number": 3,
+      "step_type": "Execute Individual Reports",
+      "description": "Runs all report scripts in sequence.",
+      "operations": ["Execute all report scripts one by one"],
+      "dependencies": ["ADV_R001_SALES_DAILY.sas", "ADV_R002_PRODUCT_INVENTORY_DAILY.sas", "ADV_R003_NEW_CUSTOMER_DAILY.sas", "ADV_R004_RESELLERS_PERFORMANCE_DAILY.sas", "ADV_R005_EMPL_SALES_PERFORMANCE_DAILY.sas"],
+      "sas_code": "\n%INCLUDE 'ADV_R001_SALES_DAILY.sas';\n%INCLUDE 'ADV_R002_PRODUCT_INVENTORY_DAILY.sas';\n%INCLUDE 'ADV_R003_NEW_CUSTOMER_DAILY.sas';\n%INCLUDE 'ADV_R004_RESELLERS_PERFORMANCE_DAILY.sas';\n%INCLUDE 'ADV_R005_EMPL_SALES_PERFORMANCE_DAILY.sas';"
+    },
+    {
+      "step_number": 4,
+      "step_type": "Log Completion",
+      "description": "Logs the completion status of the daily batch run.",
+      "operations": ["Write execution success message to log"],
+      "dependencies": [],
+      "sas_code": "DATA _NULL_;\n FILE LOG;\n PUT 'ADV_REPORT_DAILY_BATCH completed successfully on &SYSDATE9.';\nRUN;"
+    }
+  ]
+}

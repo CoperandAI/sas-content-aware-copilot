@@ -1,0 +1,103 @@
+NOTE: PROCEDURE PRINTTO used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: Table WORK.RESELLER_REPORT created, with 0 rows and 4 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.31 seconds
+      cpu time            0.28 seconds
+      
+
+
+NOTE: No observations in data set WORK.RESELLER_REPORT.
+NOTE: PROCEDURE MEANS used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: No observations in data set WORK.RESELLER_REPORT.
+NOTE: Data set has 0 observations.
+419         /**********************************************************************
+420         *   PRODUCT:   SAS
+421         *   VERSION:   9.3
+422         *   CREATOR:   External File Interface
+423         *   DATE:      07MAY12
+424         *   DESC:      Generated SAS Datastep Code
+425         *   TEMPLATE SOURCE:  (None Specified.)
+426         ***********************************************************************/
+427            data _null_;
+428            %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+429            %let _EFIREC_ = 0;     /* clear export record count macro variable */
+430            file 'Z:\Shared with
+430      ! VM\Log_Analytics\reports\ADV_R004_RESELLERS_PERFORMANCE_DAILY_11may2012.csv'
+430      ! delimiter=',' DSD DROPOVER lrecl=32767;
+431            if _n_ = 1 then        /* write column names or labels */
+432             do;
+433               put
+434                  "ResellerName"
+435               ','
+436                  "OrderDate"
+437               ','
+438                  "OrderQuantity"
+439               ','
+440                  "SalesAmount"
+441               ;
+12                                    The SAS System              15:32 Monday, May 7, 2012
+
+442             end;
+443           set  WORK.RESELLER_REPORT   end=EFIEOD;
+444               format ResellerName $50. ;
+445               format OrderDate $10. ;
+446               format OrderQuantity 6. ;
+447               format SalesAmount dollar27.2 ;
+448             do;
+449               EFIOUT + 1;
+450               put ResellerName $ @;
+451               put OrderDate $ @;
+452               put OrderQuantity @;
+453               put SalesAmount ;
+454               ;
+455             end;
+456            if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro
+456      ! variable */
+457            if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+458            run;
+
+NOTE: The file 'Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R004_RESELLERS_PERFORMANCE_DAILY_11may2012.csv' is:
+      
+      Filename=Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R004_RESELLERS_PERFORMANCE_DAILY_11may2012.csv,
+      RECFM=V,LRECL=32767,File Size (bytes)=0,
+      Last Modified=04Mar2025:18:51:15,
+      Create Time=04Mar2025:18:51:15
+
+NOTE: 1 record was written to the file 'Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R004_RESELLERS_PERFORMANCE_DAILY_11may2012.csv'.
+      The minimum record length was 48.
+      The maximum record length was 48.
+NOTE: There were 0 observations read from the data set WORK.RESELLER_REPORT.
+NOTE: DATA statement used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.03 seconds
+      
+
+0 records created in Z:\Shared with 
+VM\Log_Analytics\reports\ADV_R004_RESELLERS_PERFORMANCE_DAILY_11may2012.csv from 
+WORK.RESELLER_REPORT.
+  
+  
+NOTE: "Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R004_RESELLERS_PERFORMANCE_DAILY_11may2012.csv" file 
+      was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.07 seconds
+      
+
+13                                    The SAS System              15:32 Monday, May 7, 2012
+
+

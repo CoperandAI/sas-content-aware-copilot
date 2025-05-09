@@ -1,0 +1,111 @@
+NOTE: PROCEDURE PRINTTO used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: Table WORK.EMPLOYEE_REPORT created, with 0 rows and 6 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+14                                    The SAS System              15:32 Monday, May 7, 2012
+
+      cpu time            0.07 seconds
+      
+
+
+NOTE: No observations in data set WORK.EMPLOYEE_REPORT.
+NOTE: PROCEDURE MEANS used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: No observations in data set WORK.EMPLOYEE_REPORT.
+NOTE: Data set has 0 observations.
+561         /**********************************************************************
+562         *   PRODUCT:   SAS
+563         *   VERSION:   9.3
+564         *   CREATOR:   External File Interface
+565         *   DATE:      07MAY12
+566         *   DESC:      Generated SAS Datastep Code
+567         *   TEMPLATE SOURCE:  (None Specified.)
+568         ***********************************************************************/
+569            data _null_;
+570            %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+571            %let _EFIREC_ = 0;     /* clear export record count macro variable */
+572            file 'Z:\Shared with
+572      ! VM\Log_Analytics\reports\ADV_R005_EMPL_SALES_PERFORMANCE_DAILY_08may2012.csv'
+572      ! delimiter=',' DSD DROPOVER lrecl=32767;
+573            if _n_ = 1 then        /* write column names or labels */
+574             do;
+575               put
+576                  "EmployeeKey"
+577               ','
+578                  "FirstName"
+579               ','
+580                  "LastName"
+581               ','
+582                  "DepartmentName"
+583               ','
+584                  "SalesDate"
+585               ','
+586                  "SalesAmountQuota"
+587               ;
+588             end;
+589           set  WORK.EMPLOYEE_REPORT   end=EFIEOD;
+590               format EmployeeKey 11. ;
+591               format FirstName $50. ;
+592               format LastName $50. ;
+593               format DepartmentName $50. ;
+594               format SalesDate $10. ;
+595               format SalesAmountQuota dollar27.2 ;
+596             do;
+15                                    The SAS System              15:32 Monday, May 7, 2012
+
+597               EFIOUT + 1;
+598               put EmployeeKey @;
+599               put FirstName $ @;
+600               put LastName $ @;
+601               put DepartmentName $ @;
+602               put SalesDate $ @;
+603               put SalesAmountQuota ;
+604               ;
+605             end;
+606            if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro
+606      ! variable */
+607            if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+608            run;
+
+NOTE: The file 'Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R005_EMPL_SALES_PERFORMANCE_DAILY_08may2012.csv' is:
+      
+      Filename=Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R005_EMPL_SALES_PERFORMANCE_DAILY_08may2012.csv,
+      RECFM=V,LRECL=32767,File Size (bytes)=0,
+      Last Modified=04Mar2025:18:49:52,
+      Create Time=04Mar2025:18:49:52
+
+NOTE: 1 record was written to the file 'Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R005_EMPL_SALES_PERFORMANCE_DAILY_08may2012.csv'.
+      The minimum record length was 72.
+      The maximum record length was 72.
+NOTE: There were 0 observations read from the data set WORK.EMPLOYEE_REPORT.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+0 records created in Z:\Shared with 
+VM\Log_Analytics\reports\ADV_R005_EMPL_SALES_PERFORMANCE_DAILY_08may2012.csv from 
+WORK.EMPLOYEE_REPORT.
+  
+  
+NOTE: "Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R005_EMPL_SALES_PERFORMANCE_DAILY_08may2012.csv" file 
+      was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.07 seconds
+      
+
+

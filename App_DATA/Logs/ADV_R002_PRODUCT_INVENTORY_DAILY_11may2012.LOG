@@ -1,0 +1,101 @@
+NOTE: PROCEDURE PRINTTO used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: Table WORK.INVENTORY_REPORT created, with 606 rows and 4 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           1.64 seconds
+      cpu time            1.59 seconds
+      
+
+
+NOTE: There were 606 observations read from the data set WORK.INVENTORY_REPORT.
+NOTE: PROCEDURE MEANS used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+
+204         /**********************************************************************
+205         *   PRODUCT:   SAS
+206         *   VERSION:   9.3
+207         *   CREATOR:   External File Interface
+208         *   DATE:      07MAY12
+209         *   DESC:      Generated SAS Datastep Code
+210         *   TEMPLATE SOURCE:  (None Specified.)
+211         ***********************************************************************/
+212            data _null_;
+213            %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+214            %let _EFIREC_ = 0;     /* clear export record count macro variable */
+215            file 'Z:\Shared with
+215      ! VM\Log_Analytics\reports\ADV_R002_PRODUCT_INVENTORY_DAILY_11may2012.csv'
+215      ! delimiter=',' DSD DROPOVER lrecl=32767;
+216            if _n_ = 1 then        /* write column names or labels */
+217             do;
+218               put
+219                  "ProductName"
+6                                     The SAS System              15:32 Monday, May 7, 2012
+
+220               ','
+221                  "QuantityOnHand"
+222               ','
+223                  "UnitCost"
+224               ','
+225                  "InventoryDate"
+226               ;
+227             end;
+228           set  WORK.INVENTORY_REPORT   end=EFIEOD;
+229               format ProductName $50. ;
+230               format QuantityOnHand 11. ;
+231               format UnitCost dollar27.2 ;
+232               format InventoryDate $10. ;
+233             do;
+234               EFIOUT + 1;
+235               put ProductName $ @;
+236               put QuantityOnHand @;
+237               put UnitCost @;
+238               put InventoryDate $ ;
+239               ;
+240             end;
+241            if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro
+241      ! variable */
+242            if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+243            run;
+
+NOTE: The file 'Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R002_PRODUCT_INVENTORY_DAILY_11may2012.csv' is:
+      
+      Filename=Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R002_PRODUCT_INVENTORY_DAILY_11may2012.csv,
+      RECFM=V,LRECL=32767,File Size (bytes)=0,
+      Last Modified=04Mar2025:18:51:14,
+      Create Time=04Mar2025:18:51:14
+
+NOTE: 607 records were written to the file 'Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R002_PRODUCT_INVENTORY_DAILY_11may2012.csv'.
+      The minimum record length was 25.
+      The maximum record length was 57.
+NOTE: There were 606 observations read from the data set WORK.INVENTORY_REPORT.
+NOTE: DATA statement used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.03 seconds
+      
+
+606 records created in Z:\Shared with 
+VM\Log_Analytics\reports\ADV_R002_PRODUCT_INVENTORY_DAILY_11may2012.csv from 
+WORK.INVENTORY_REPORT.
+  
+  
+NOTE: "Z:\Shared with 
+7                                     The SAS System              15:32 Monday, May 7, 2012
+
+      VM\Log_Analytics\reports\ADV_R002_PRODUCT_INVENTORY_DAILY_11may2012.csv" file was 
+      successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.10 seconds
+      cpu time            0.06 seconds
+      
+
+

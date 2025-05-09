@@ -1,0 +1,35 @@
+{
+  "script_name": "ADV_R002_PRODUCT_INVENTORY_DAILY.sas",
+  "description": "Generates an inventory report for all products in stock.",
+  "steps": [
+    {
+      "step_number": 1,
+      "step_type": "PROC SQL",
+      "description": "Extract inventory data for the reporting date and join with product details.",
+      "input_sources": ["sas_dw.FactProductInventory", "sas_dw.DimProduct", "sas_dw.DimDate"],
+      "key_variables": ["ProductKey", "QuantityOnHand", "UnitCost", "FullDateAlternateKey"],
+      "operations": ["Filter inventory data for report_date", "Join with product details"],
+      "output": "WORK.inventory_data",
+      "sas_code": "PROC SQL;\nCREATE TABLE WORK.inventory_data AS\nSELECT i.ProductKey, i.QuantityOnHand, i.UnitCost, d.FullDateAlternateKey\nFROM sas_dw.FactProductInventory i\nJOIN sas_dw.DimProduct p ON i.ProductKey = p.ProductKey\nJOIN sas_dw.DimDate d ON i.DateKey = d.DateKey\nWHERE d.FullDateAlternateKey = '&report_date';\nQUIT;"
+    },
+    {
+      "step_number": 2,
+      "step_type": "PROC SORT",
+      "description": "Sort the inventory data by ProductKey.",
+      "input_sources": ["WORK.inventory_data"],
+      "key_variables": ["ProductKey"],
+      "operations": ["Sort data in ascending order"],
+      "output": "WORK.sorted_inventory",
+      "sas_code": "PROC SORT DATA=WORK.inventory_data OUT=WORK.sorted_inventory;\nBY ProductKey;\nRUN;"
+    },
+    {
+      "step_number": 3,
+      "step_type": "PROC EXPORT",
+      "description": "Export the final inventory report to CSV format.",
+      "input_sources": ["WORK.sorted_inventory"],
+      "output": "inventory_report.csv",
+      "export_format": "CSV",
+      "sas_code": "PROC EXPORT DATA=WORK.sorted_inventory\nOUTFILE='inventory_report.csv'\nDBMS=CSV REPLACE;\nRUN;"
+    }
+  ]
+}

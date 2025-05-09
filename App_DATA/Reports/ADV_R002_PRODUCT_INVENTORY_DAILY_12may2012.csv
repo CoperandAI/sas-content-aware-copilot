@@ -1,0 +1,607 @@
+ProductName,QuantityOnHand,UnitCost,InventoryDate
+Adjustable Race,875,$0.27,2012-05-12
+Bearing Ball,875,$0.21,2012-05-12
+BB Ball Bearing,700,$0.20,2012-05-12
+Headset Ball Bearings,700,$0.26,2012-05-12
+Blade,700,$0.20,2012-05-12
+LL Crankarm,438,$0.20,2012-05-12
+ML Crankarm,438,$0.19,2012-05-12
+HL Crankarm,438,$0.24,2012-05-12
+Chainring Bolts,875,$0.21,2012-05-12
+Chainring Nut,875,$0.17,2012-05-12
+Chainring,875,$0.29,2012-05-12
+Crown Race,875,$0.19,2012-05-12
+Chain Stays,875,$0.65,2012-05-12
+Decal 1,875,$0.18,2012-05-12
+Decal 2,875,$0.24,2012-05-12
+Down Tube,700,$0.21,2012-05-12
+Mountain End Caps,875,$0.21,2012-05-12
+Road End Caps,875,$0.20,2012-05-12
+Touring End Caps,875,$0.29,2012-05-12
+Fork End,700,$0.17,2012-05-12
+Freewheel,438,$0.23,2012-05-12
+Flat Washer 1,875,$0.19,2012-05-12
+Flat Washer 6,875,$0.20,2012-05-12
+Flat Washer 2,875,$0.24,2012-05-12
+Flat Washer 9,875,$0.22,2012-05-12
+Flat Washer 4,875,$0.20,2012-05-12
+Flat Washer 3,875,$0.20,2012-05-12
+Flat Washer 8,875,$0.31,2012-05-12
+Flat Washer 5,875,$0.20,2012-05-12
+Flat Washer 7,875,$0.23,2012-05-12
+Fork Crown,700,$0.20,2012-05-12
+Front Derailleur Cage,700,$0.21,2012-05-12
+Front Derailleur Linkage,700,$0.20,2012-05-12
+Guide Pulley,700,$0.30,2012-05-12
+LL Grip Tape,700,$0.53,2012-05-12
+ML Grip Tape,700,$0.19,2012-05-12
+HL Grip Tape,700,$0.22,2012-05-12
+Thin-Jam Hex Nut 9,875,$0.23,2012-05-12
+Thin-Jam Hex Nut 10,875,$0.30,2012-05-12
+Thin-Jam Hex Nut 1,875,$0.39,2012-05-12
+Thin-Jam Hex Nut 2,875,$0.51,2012-05-12
+Thin-Jam Hex Nut 15,875,$0.20,2012-05-12
+Thin-Jam Hex Nut 16,875,$0.21,2012-05-12
+Thin-Jam Hex Nut 5,875,$0.20,2012-05-12
+Thin-Jam Hex Nut 6,875,$0.42,2012-05-12
+Thin-Jam Hex Nut 3,875,$0.22,2012-05-12
+Thin-Jam Hex Nut 4,875,$0.27,2012-05-12
+Thin-Jam Hex Nut 13,875,$0.18,2012-05-12
+Thin-Jam Hex Nut 14,875,$0.37,2012-05-12
+Thin-Jam Hex Nut 7,875,$0.19,2012-05-12
+Thin-Jam Hex Nut 8,875,$0.25,2012-05-12
+Thin-Jam Hex Nut 12,875,$0.30,2012-05-12
+Thin-Jam Hex Nut 11,875,$0.42,2012-05-12
+Hex Nut 5,875,$0.22,2012-05-12
+Hex Nut 6,875,$0.34,2012-05-12
+Hex Nut 16,875,$0.29,2012-05-12
+Hex Nut 17,875,$0.21,2012-05-12
+Hex Nut 7,875,$0.22,2012-05-12
+Hex Nut 8,875,$0.22,2012-05-12
+Hex Nut 9,875,$0.18,2012-05-12
+Hex Nut 22,875,$0.20,2012-05-12
+Hex Nut 23,875,$0.40,2012-05-12
+Hex Nut 12,875,$0.28,2012-05-12
+Hex Nut 13,875,$0.20,2012-05-12
+Hex Nut 1,875,$0.24,2012-05-12
+Hex Nut 10,875,$0.21,2012-05-12
+Hex Nut 11,875,$0.37,2012-05-12
+Hex Nut 2,875,$0.19,2012-05-12
+Hex Nut 20,875,$0.19,2012-05-12
+Hex Nut 21,875,$0.32,2012-05-12
+Hex Nut 3,875,$0.25,2012-05-12
+Hex Nut 14,875,$0.29,2012-05-12
+Hex Nut 15,875,$0.26,2012-05-12
+Hex Nut 4,875,$0.39,2012-05-12
+Hex Nut 18,875,$0.31,2012-05-12
+Hex Nut 19,875,$0.18,2012-05-12
+Handlebar Tube,700,$0.18,2012-05-12
+Head Tube,700,$0.28,2012-05-12
+LL Hub,438,$0.51,2012-05-12
+HL Hub,438,$0.23,2012-05-12
+Keyed Washer,875,$0.23,2012-05-12
+External Lock Washer 3,875,$0.19,2012-05-12
+External Lock Washer 4,875,$0.20,2012-05-12
+External Lock Washer 9,875,$0.25,2012-05-12
+External Lock Washer 5,875,$0.42,2012-05-12
+External Lock Washer 7,875,$0.23,2012-05-12
+External Lock Washer 6,875,$0.21,2012-05-12
+External Lock Washer 1,875,$0.24,2012-05-12
+External Lock Washer 8,875,$0.24,2012-05-12
+External Lock Washer 2,875,$0.23,2012-05-12
+Internal Lock Washer 3,875,$0.17,2012-05-12
+Internal Lock Washer 4,875,$0.18,2012-05-12
+Internal Lock Washer 9,875,$0.25,2012-05-12
+Internal Lock Washer 5,875,$0.16,2012-05-12
+Internal Lock Washer 7,875,$0.24,2012-05-12
+Internal Lock Washer 6,875,$0.16,2012-05-12
+Internal Lock Washer 10,875,$0.26,2012-05-12
+Internal Lock Washer 1,875,$0.26,2012-05-12
+Internal Lock Washer 8,875,$0.43,2012-05-12
+Internal Lock Washer 2,875,$0.30,2012-05-12
+Thin-Jam Lock Nut 9,875,$0.22,2012-05-12
+Thin-Jam Lock Nut 10,875,$0.19,2012-05-12
+Thin-Jam Lock Nut 1,875,$0.22,2012-05-12
+Thin-Jam Lock Nut 2,875,$0.29,2012-05-12
+Thin-Jam Lock Nut 15,875,$0.36,2012-05-12
+Thin-Jam Lock Nut 16,875,$0.19,2012-05-12
+Thin-Jam Lock Nut 5,875,$0.29,2012-05-12
+Thin-Jam Lock Nut 6,875,$0.19,2012-05-12
+Thin-Jam Lock Nut 3,875,$0.31,2012-05-12
+Thin-Jam Lock Nut 4,875,$0.20,2012-05-12
+Thin-Jam Lock Nut 13,875,$0.17,2012-05-12
+Thin-Jam Lock Nut 14,875,$0.30,2012-05-12
+Thin-Jam Lock Nut 7,875,$0.20,2012-05-12
+Thin-Jam Lock Nut 8,875,$0.19,2012-05-12
+Thin-Jam Lock Nut 12,875,$0.18,2012-05-12
+Thin-Jam Lock Nut 11,875,$0.28,2012-05-12
+Lock Nut 5,875,$0.24,2012-05-12
+Lock Nut 6,875,$0.24,2012-05-12
+Lock Nut 16,875,$0.17,2012-05-12
+Lock Nut 17,875,$0.20,2012-05-12
+Lock Nut 7,875,$0.29,2012-05-12
+Lock Nut 8,875,$0.34,2012-05-12
+Lock Nut 9,875,$0.17,2012-05-12
+Lock Nut 22,875,$0.27,2012-05-12
+Lock Nut 23,875,$0.18,2012-05-12
+Lock Nut 12,875,$0.19,2012-05-12
+Lock Nut 13,875,$0.34,2012-05-12
+Lock Nut 1,875,$0.20,2012-05-12
+Lock Nut 10,875,$0.32,2012-05-12
+Lock Nut 11,875,$0.25,2012-05-12
+Lock Nut 2,875,$0.25,2012-05-12
+Lock Nut 20,875,$0.21,2012-05-12
+Lock Nut 21,875,$0.35,2012-05-12
+Lock Nut 3,875,$0.28,2012-05-12
+Lock Nut 14,875,$0.20,2012-05-12
+Lock Nut 15,875,$0.19,2012-05-12
+Lock Nut 4,875,$0.32,2012-05-12
+Lock Nut 19,875,$0.24,2012-05-12
+Lock Nut 18,875,$0.27,2012-05-12
+Lock Ring,875,$0.29,2012-05-12
+Lower Head Race,875,$0.19,2012-05-12
+Lock Washer 4,875,$0.32,2012-05-12
+Lock Washer 5,875,$0.22,2012-05-12
+Lock Washer 10,875,$0.21,2012-05-12
+Lock Washer 6,875,$0.38,2012-05-12
+Lock Washer 13,875,$0.17,2012-05-12
+Lock Washer 8,875,$0.20,2012-05-12
+Lock Washer 1,875,$0.19,2012-05-12
+Lock Washer 7,875,$0.35,2012-05-12
+Lock Washer 12,875,$0.24,2012-05-12
+Lock Washer 2,875,$0.26,2012-05-12
+Lock Washer 9,875,$0.24,2012-05-12
+Lock Washer 3,875,$0.27,2012-05-12
+Lock Washer 11,875,$0.23,2012-05-12
+Metal Angle,875,$0.19,2012-05-12
+Metal Bar 1,875,$0.19,2012-05-12
+Metal Bar 2,875,$0.29,2012-05-12
+Metal Plate 2,875,$0.34,2012-05-12
+Metal Plate 1,875,$0.19,2012-05-12
+Metal Plate 3,875,$0.17,2012-05-12
+Metal Sheet 2,875,$0.18,2012-05-12
+Metal Sheet 3,875,$0.29,2012-05-12
+Metal Sheet 7,875,$0.26,2012-05-12
+Metal Sheet 4,875,$0.33,2012-05-12
+Metal Sheet 5,875,$0.24,2012-05-12
+Metal Sheet 6,875,$0.22,2012-05-12
+Metal Sheet 1,875,$0.19,2012-05-12
+Metal Tread Plate,875,$0.22,2012-05-12
+LL Nipple,875,$0.20,2012-05-12
+HL Nipple,875,$0.44,2012-05-12
+Paint - Black,52,$0.21,2012-05-12
+Paint - Red,52,$0.20,2012-05-12
+Paint - Silver,52,$0.20,2012-05-12
+Paint - Blue,52,$0.26,2012-05-12
+Paint - Yellow,52,$0.29,2012-05-12
+Pinch Bolt,875,$0.26,2012-05-12
+Cup-Shaped Race,875,$0.24,2012-05-12
+Cone-Shaped Race,875,$0.19,2012-05-12
+Reflector,875,$0.40,2012-05-12
+LL Mountain Rim,700,$0.21,2012-05-12
+ML Mountain Rim,700,$0.21,2012-05-12
+HL Mountain Rim,700,$0.28,2012-05-12
+LL Road Rim,700,$0.21,2012-05-12
+ML Road Rim,700,$0.23,2012-05-12
+HL Road Rim,700,$0.20,2012-05-12
+Touring Rim,700,$0.23,2012-05-12
+LL Mountain Seat Assembly,438,$0.25,2012-05-12
+ML Mountain Seat Assembly,438,$0.18,2012-05-12
+HL Mountain Seat Assembly,438,$0.21,2012-05-12
+LL Road Seat Assembly,438,$0.34,2012-05-12
+ML Road Seat Assembly,438,$0.22,2012-05-12
+HL Road Seat Assembly,438,$0.23,2012-05-12
+LL Touring Seat Assembly,438,$0.30,2012-05-12
+ML Touring Seat Assembly,438,$0.36,2012-05-12
+HL Touring Seat Assembly,438,$0.19,2012-05-12
+LL Spindle/Axle,438,$0.19,2012-05-12
+HL Spindle/Axle,438,$0.37,2012-05-12
+LL Shell,700,$0.26,2012-05-12
+HL Shell,700,$0.22,2012-05-12
+Spokes,875,$0.26,2012-05-12
+Seat Lug,875,$0.18,2012-05-12
+Stem,438,$0.17,2012-05-12
+Seat Post,438,$0.44,2012-05-12
+Steerer,438,$0.25,2012-05-12
+Seat Stays,700,$0.20,2012-05-12
+Seat Tube,438,$0.22,2012-05-12
+Top Tube,438,$0.30,2012-05-12
+Tension Pulley,700,$0.40,2012-05-12
+Rear Derailleur Cage,438,$0.38,2012-05-12
+"HL Road Frame - Black, 58",438,$0.18,2012-05-12
+"HL Road Frame - Red, 58",438,$0.21,2012-05-12
+"Sport-100 Helmet, Red",4,$11.30,2012-05-12
+"Sport-100 Helmet, Red",4,$12.87,2012-05-12
+"Sport-100 Helmet, Red",4,$9.43,2012-05-12
+"Sport-100 Helmet, Black",4,$10.97,2012-05-12
+"Sport-100 Helmet, Black",4,$11.93,2012-05-12
+"Sport-100 Helmet, Black",4,$10.11,2012-05-12
+"Mountain Bike Socks, M",4,$3.55,2012-05-12
+"Mountain Bike Socks, L",4,$3.09,2012-05-12
+"Sport-100 Helmet, Blue",4,$10.98,2012-05-12
+"Sport-100 Helmet, Blue",4,$10.44,2012-05-12
+"Sport-100 Helmet, Blue",4,$9.83,2012-05-12
+AWC Logo Cap,4,$3.38,2012-05-12
+AWC Logo Cap,4,$3.12,2012-05-12
+AWC Logo Cap,4,$2.66,2012-05-12
+"Long-Sleeve Logo Jersey, S",4,$35.29,2012-05-12
+"Long-Sleeve Logo Jersey, S",4,$30.72,2012-05-12
+"Long-Sleeve Logo Jersey, S",4,$26.47,2012-05-12
+"Long-Sleeve Logo Jersey, M",4,$20.52,2012-05-12
+"Long-Sleeve Logo Jersey, M",4,$20.40,2012-05-12
+"Long-Sleeve Logo Jersey, M",4,$14.86,2012-05-12
+"Long-Sleeve Logo Jersey, L",4,$19.27,2012-05-12
+"Long-Sleeve Logo Jersey, L",4,$19.03,2012-05-12
+"Long-Sleeve Logo Jersey, L",4,$15.46,2012-05-12
+"Long-Sleeve Logo Jersey, XL",4,$18.60,2012-05-12
+"Long-Sleeve Logo Jersey, XL",4,$18.24,2012-05-12
+"Long-Sleeve Logo Jersey, XL",4,$17.83,2012-05-12
+"HL Road Frame - Red, 62",408,$504.79,2012-05-12
+"HL Road Frame - Red, 62",391,$551.18,2012-05-12
+"HL Road Frame - Red, 62",438,$513.62,2012-05-12
+"HL Road Frame - Red, 44",411,$514.19,2012-05-12
+"HL Road Frame - Red, 44",378,$538.36,2012-05-12
+"HL Road Frame - Red, 44",438,$495.16,2012-05-12
+"HL Road Frame - Red, 48",438,$716.20,2012-05-12
+"HL Road Frame - Red, 48",390,$526.54,2012-05-12
+"HL Road Frame - Red, 48",438,$524.13,2012-05-12
+"HL Road Frame - Red, 52",438,$677.07,2012-05-12
+"HL Road Frame - Red, 52",438,$696.34,2012-05-12
+"HL Road Frame - Red, 52",438,$964.66,2012-05-12
+"HL Road Frame - Red, 56",438,$767.97,2012-05-12
+"HL Road Frame - Red, 56",438,$709.89,2012-05-12
+"HL Road Frame - Red, 56",438,$808.61,2012-05-12
+"LL Road Frame - Black, 58",457,$130.73,2012-05-12
+"LL Road Frame - Black, 58",458,$120.31,2012-05-12
+"LL Road Frame - Black, 58",438,$129.78,2012-05-12
+"LL Road Frame - Black, 60",437,$170.62,2012-05-12
+"LL Road Frame - Black, 60",390,$116.68,2012-05-12
+"LL Road Frame - Black, 60",438,$137.93,2012-05-12
+"LL Road Frame - Black, 62",438,$162.19,2012-05-12
+"LL Road Frame - Black, 62",438,$153.64,2012-05-12
+"LL Road Frame - Black, 62",438,$172.40,2012-05-12
+"LL Road Frame - Red, 44",438,$123.86,2012-05-12
+"LL Road Frame - Red, 44",495,$126.19,2012-05-12
+"LL Road Frame - Red, 48",382,$128.52,2012-05-12
+"LL Road Frame - Red, 48",442,$121.29,2012-05-12
+"LL Road Frame - Red, 52",431,$118.75,2012-05-12
+"LL Road Frame - Red, 52",464,$121.20,2012-05-12
+"LL Road Frame - Red, 58",438,$164.91,2012-05-12
+"LL Road Frame - Red, 58",438,$181.97,2012-05-12
+"LL Road Frame - Red, 60",474,$122.96,2012-05-12
+"LL Road Frame - Red, 60",381,$113.93,2012-05-12
+"LL Road Frame - Red, 62",466,$120.41,2012-05-12
+"LL Road Frame - Red, 62",411,$135.90,2012-05-12
+"ML Road Frame - Red, 44",438,$368.78,2012-05-12
+"ML Road Frame - Red, 48",383,$271.71,2012-05-12
+"ML Road Frame - Red, 52",408,$243.70,2012-05-12
+"ML Road Frame - Red, 58",438,$320.36,2012-05-12
+"ML Road Frame - Red, 60",438,$365.11,2012-05-12
+"LL Road Frame - Black, 44",412,$125.42,2012-05-12
+"LL Road Frame - Black, 44",477,$111.95,2012-05-12
+"LL Road Frame - Black, 44",438,$129.96,2012-05-12
+"LL Road Frame - Black, 48",438,$180.54,2012-05-12
+"LL Road Frame - Black, 48",438,$176.05,2012-05-12
+"LL Road Frame - Black, 48",438,$203.69,2012-05-12
+"LL Road Frame - Black, 52",449,$122.06,2012-05-12
+"LL Road Frame - Black, 52",375,$114.48,2012-05-12
+"LL Road Frame - Black, 52",438,$130.36,2012-05-12
+"HL Mountain Frame - Silver, 42",414,$460.54,2012-05-12
+"HL Mountain Frame - Silver, 42",400,$477.70,2012-05-12
+"HL Mountain Frame - Silver, 42",438,$391.41,2012-05-12
+"HL Mountain Frame - Silver, 44",438,$644.31,2012-05-12
+"HL Mountain Frame - Silver, 48",486,$608.88,2012-05-12
+"HL Mountain Frame - Silver, 46",393,$479.86,2012-05-12
+"HL Mountain Frame - Silver, 46",402,$521.25,2012-05-12
+"HL Mountain Frame - Silver, 46",438,$424.71,2012-05-12
+"HL Mountain Frame - Black, 42",478,$411.24,2012-05-12
+"HL Mountain Frame - Black, 42",376,$431.99,2012-05-12
+"HL Mountain Frame - Black, 42",438,$411.90,2012-05-12
+"HL Mountain Frame - Black, 44",421,$589.78,2012-05-12
+"HL Mountain Frame - Black, 48",438,$552.59,2012-05-12
+"HL Mountain Frame - Black, 46",438,$656.07,2012-05-12
+"HL Mountain Frame - Black, 46",438,$609.72,2012-05-12
+"HL Mountain Frame - Black, 46",438,$637.41,2012-05-12
+"HL Mountain Frame - Black, 38",438,$469.09,2012-05-12
+"HL Mountain Frame - Black, 38",382,$503.27,2012-05-12
+"HL Mountain Frame - Black, 38",438,$402.51,2012-05-12
+"HL Mountain Frame - Silver, 38",377,$497.56,2012-05-12
+"HL Mountain Frame - Silver, 38",480,$480.14,2012-05-12
+"HL Mountain Frame - Silver, 38",438,$429.36,2012-05-12
+"Road-150 Red, 62",91,$529.82,2012-05-12
+"Road-150 Red, 44",84,$538.94,2012-05-12
+"Road-150 Red, 48",84,$521.42,2012-05-12
+"Road-150 Red, 52",84,$501.36,2012-05-12
+"Road-150 Red, 56",88,$520.27,2012-05-12
+"Road-450 Red, 58",84,$603.76,2012-05-12
+"Road-450 Red, 60",86,$594.56,2012-05-12
+"Road-450 Red, 44",80,$531.11,2012-05-12
+"Road-450 Red, 48",99,$593.14,2012-05-12
+"Road-450 Red, 52",77,$582.24,2012-05-12
+"Road-650 Red, 58",77,$108.67,2012-05-12
+"Road-650 Red, 58",88,$286.35,2012-05-12
+"Road-650 Red, 60",85,$100.56,2012-05-12
+"Road-650 Red, 60",84,$289.21,2012-05-12
+"Road-650 Red, 62",82,$300.46,2012-05-12
+"Road-650 Red, 62",97,$258.98,2012-05-12
+"Road-650 Red, 44",97,$116.11,2012-05-12
+"Road-650 Red, 44",94,$160.17,2012-05-12
+"Road-650 Red, 48",89,$106.67,2012-05-12
+"Road-650 Red, 48",81,$309.54,2012-05-12
+"Road-650 Red, 52",85,$113.40,2012-05-12
+"Road-650 Red, 52",78,$271.61,2012-05-12
+"Road-650 Black, 58",78,$291.86,2012-05-12
+"Road-650 Black, 58",95,$290.87,2012-05-12
+"Road-650 Black, 60",82,$101.52,2012-05-12
+"Road-650 Black, 60",84,$313.21,2012-05-12
+"Road-650 Black, 62",82,$288.86,2012-05-12
+"Road-650 Black, 62",89,$317.91,2012-05-12
+"Road-650 Black, 44",87,$108.25,2012-05-12
+"Road-650 Black, 44",90,$319.56,2012-05-12
+"Road-650 Black, 48",87,$295.15,2012-05-12
+"Road-650 Black, 48",88,$326.04,2012-05-12
+"Road-650 Black, 52",90,$102.62,2012-05-12
+"Road-650 Black, 52",76,$244.72,2012-05-12
+"Mountain-100 Silver, 38",88,$563.10,2012-05-12
+"Mountain-100 Silver, 42",81,$605.20,2012-05-12
+"Mountain-100 Silver, 44",88,$484.58,2012-05-12
+"Mountain-100 Silver, 48",79,$492.08,2012-05-12
+"Mountain-100 Black, 38",75,$494.13,2012-05-12
+"Mountain-100 Black, 42",80,$516.37,2012-05-12
+"Mountain-100 Black, 44",96,$528.96,2012-05-12
+"Mountain-100 Black, 48",86,$503.57,2012-05-12
+"Mountain-200 Silver, 38",93,$810.87,2012-05-12
+"Mountain-200 Silver, 38",88,$714.61,2012-05-12
+"Mountain-200 Silver, 42",92,$741.99,2012-05-12
+"Mountain-200 Silver, 42",88,$696.60,2012-05-12
+"Mountain-200 Silver, 46",90,$820.61,2012-05-12
+"Mountain-200 Silver, 46",88,$687.93,2012-05-12
+"Mountain-200 Black, 38",98,$894.75,2012-05-12
+"Mountain-200 Black, 38",88,$666.87,2012-05-12
+"Mountain-200 Black, 42",96,$783.37,2012-05-12
+"Mountain-200 Black, 42",88,$663.67,2012-05-12
+"Mountain-200 Black, 46",96,$796.40,2012-05-12
+"Mountain-200 Black, 46",88,$690.85,2012-05-12
+"Mountain-300 Black, 38",99,$495.16,2012-05-12
+"Mountain-300 Black, 40",84,$434.87,2012-05-12
+"Mountain-300 Black, 44",100,$422.31,2012-05-12
+"Mountain-300 Black, 48",92,$394.36,2012-05-12
+"Road-250 Red, 44",77,$928.06,2012-05-12
+"Road-250 Red, 48",92,$921.86,2012-05-12
+"Road-250 Red, 52",91,$875.18,2012-05-12
+"Road-250 Red, 58",78,$958.47,2012-05-12
+"Road-250 Red, 58",88,$959.43,2012-05-12
+"Road-250 Black, 44",85,$929.73,2012-05-12
+"Road-250 Black, 44",88,$959.92,2012-05-12
+"Road-250 Black, 48",87,$825.14,2012-05-12
+"Road-250 Black, 48",88,$836.13,2012-05-12
+"Road-250 Black, 52",86,$818.68,2012-05-12
+"Road-250 Black, 52",88,$858.50,2012-05-12
+"Road-250 Black, 58",91,$939.78,2012-05-12
+"Road-250 Black, 58",88,$869.78,2012-05-12
+"Road-550-W Yellow, 38",97,$348.94,2012-05-12
+"Road-550-W Yellow, 38",88,$432.40,2012-05-12
+"Road-550-W Yellow, 40",80,$404.63,2012-05-12
+"Road-550-W Yellow, 40",88,$471.23,2012-05-12
+"Road-550-W Yellow, 42",89,$404.39,2012-05-12
+"Road-550-W Yellow, 42",88,$523.21,2012-05-12
+"Road-550-W Yellow, 44",86,$405.74,2012-05-12
+"Road-550-W Yellow, 44",88,$444.59,2012-05-12
+"Road-550-W Yellow, 48",79,$362.32,2012-05-12
+"Road-550-W Yellow, 48",88,$424.75,2012-05-12
+LL Fork,458,$57.19,2012-05-12
+ML Fork,438,$76.11,2012-05-12
+HL Fork,414,$82.86,2012-05-12
+LL Headset,425,$13.12,2012-05-12
+ML Headset,376,$34.98,2012-05-12
+HL Headset,449,$47.76,2012-05-12
+LL Mountain Handlebars,421,$17.88,2012-05-12
+LL Mountain Handlebars,438,$13.41,2012-05-12
+ML Mountain Handlebars,458,$20.52,2012-05-12
+ML Mountain Handlebars,438,$18.96,2012-05-12
+HL Mountain Handlebars,378,$37.03,2012-05-12
+HL Mountain Handlebars,438,$37.22,2012-05-12
+LL Road Handlebars,427,$16.26,2012-05-12
+LL Road Handlebars,438,$17.07,2012-05-12
+ML Road Handlebars,438,$25.04,2012-05-12
+ML Road Handlebars,438,$27.10,2012-05-12
+HL Road Handlebars,455,$42.11,2012-05-12
+HL Road Handlebars,438,$42.81,2012-05-12
+"ML Mountain Frame - Black, 38",495,$129.85,2012-05-12
+LL Mountain Front Wheel,399,$23.02,2012-05-12
+ML Mountain Front Wheel,450,$77.30,2012-05-12
+HL Mountain Front Wheel,456,$112.51,2012-05-12
+LL Road Front Wheel,438,$32.78,2012-05-12
+ML Road Front Wheel,433,$84.80,2012-05-12
+HL Road Front Wheel,500,$131.05,2012-05-12
+Touring Front Wheel,438,$89.23,2012-05-12
+"ML Road Frame-W - Yellow, 38",426,$203.66,2012-05-12
+"ML Road Frame-W - Yellow, 38",438,$225.52,2012-05-12
+LL Mountain Rear Wheel,391,$35.75,2012-05-12
+ML Mountain Rear Wheel,495,$88.29,2012-05-12
+HL Mountain Rear Wheel,405,$141.47,2012-05-12
+LL Road Rear Wheel,414,$46.77,2012-05-12
+ML Road Rear Wheel,386,$118.11,2012-05-12
+HL Road Rear Wheel,389,$130.30,2012-05-12
+Touring Rear Wheel,438,$99.45,2012-05-12
+"ML Mountain Frame - Black, 40",453,$135.33,2012-05-12
+"ML Mountain Frame - Black, 44",497,$137.57,2012-05-12
+"ML Mountain Frame - Black, 48",407,$146.98,2012-05-12
+"ML Road Frame-W - Yellow, 40",459,$213.97,2012-05-12
+"ML Road Frame-W - Yellow, 40",438,$248.52,2012-05-12
+"ML Road Frame-W - Yellow, 42",438,$285.16,2012-05-12
+"ML Road Frame-W - Yellow, 42",438,$356.46,2012-05-12
+"ML Road Frame-W - Yellow, 44",473,$199.55,2012-05-12
+"ML Road Frame-W - Yellow, 44",438,$186.75,2012-05-12
+"ML Road Frame-W - Yellow, 48",387,$230.81,2012-05-12
+"ML Road Frame-W - Yellow, 48",438,$248.77,2012-05-12
+"HL Road Frame - Black, 62",438,$640.92,2012-05-12
+"HL Road Frame - Black, 62",438,$848.94,2012-05-12
+"HL Road Frame - Black, 44",387,$531.93,2012-05-12
+"HL Road Frame - Black, 44",438,$537.24,2012-05-12
+"HL Road Frame - Black, 48",390,$482.41,2012-05-12
+"HL Road Frame - Black, 48",438,$583.36,2012-05-12
+"HL Road Frame - Black, 52",438,$717.61,2012-05-12
+"HL Road Frame - Black, 52",438,$942.92,2012-05-12
+"Men's Sports Shorts, S",4,$23.33,2012-05-12
+"Touring-Panniers, Large",4,$51.12,2012-05-12
+Cable Lock,4,$9.97,2012-05-12
+Minipump,4,$8.33,2012-05-12
+Mountain Pump,4,$11.44,2012-05-12
+Taillights - Battery-Powered,4,$5.83,2012-05-12
+Headlights - Dual-Beam,4,$15.24,2012-05-12
+Headlights - Weatherproof,4,$19.15,2012-05-12
+"Men's Sports Shorts, M",4,$19.64,2012-05-12
+"Men's Sports Shorts, L",4,$26.73,2012-05-12
+"Men's Sports Shorts, XL",4,$23.92,2012-05-12
+"Women's Tights, S",4,$26.85,2012-05-12
+"Women's Tights, M",4,$32.43,2012-05-12
+"Women's Tights, L",4,$27.48,2012-05-12
+"Men's Bib-Shorts, S",4,$39.31,2012-05-12
+"Men's Bib-Shorts, M",4,$31.73,2012-05-12
+"Men's Bib-Shorts, L",4,$37.35,2012-05-12
+"Half-Finger Gloves, S",4,$10.23,2012-05-12
+"Half-Finger Gloves, S",4,$7.59,2012-05-12
+"Half-Finger Gloves, M",4,$9.92,2012-05-12
+"Half-Finger Gloves, M",4,$7.56,2012-05-12
+"Half-Finger Gloves, L",4,$8.45,2012-05-12
+"Half-Finger Gloves, L",4,$8.40,2012-05-12
+"Full-Finger Gloves, S",4,$13.83,2012-05-12
+"Full-Finger Gloves, M",4,$12.17,2012-05-12
+"Full-Finger Gloves, L",4,$13.16,2012-05-12
+"Classic Vest, S",4,$17.31,2012-05-12
+"Classic Vest, M",4,$18.39,2012-05-12
+"Classic Vest, L",4,$26.05,2012-05-12
+"Women's Mountain Shorts, S",4,$20.88,2012-05-12
+"Women's Mountain Shorts, M",4,$23.30,2012-05-12
+"Women's Mountain Shorts, L",4,$22.03,2012-05-12
+Water Bottle - 30 oz.,4,$1.67,2012-05-12
+Mountain Bottle Cage,4,$3.98,2012-05-12
+Road Bottle Cage,4,$3.46,2012-05-12
+Patch Kit/8 Patches,4,$0.73,2012-05-12
+"Racing Socks, M",4,$3.44,2012-05-12
+"Racing Socks, L",4,$3.27,2012-05-12
+Hitch Rack - 4-Bike,4,$37.06,2012-05-12
+Bike Wash - Dissolver,4,$2.49,2012-05-12
+Fender Set - Mountain,4,$8.70,2012-05-12
+All-Purpose Bike Stand,4,$54.73,2012-05-12
+Hydration Pack - 70 oz.,4,$19.39,2012-05-12
+"Short-Sleeve Classic Jersey, S",4,$15.43,2012-05-12
+"Short-Sleeve Classic Jersey, M",4,$29.13,2012-05-12
+"Short-Sleeve Classic Jersey, L",4,$16.86,2012-05-12
+"Short-Sleeve Classic Jersey, XL",4,$17.49,2012-05-12
+"HL Touring Frame - Yellow, 60",438,$297.96,2012-05-12
+"LL Touring Frame - Yellow, 62",438,$104.03,2012-05-12
+"HL Touring Frame - Yellow, 46",438,$334.27,2012-05-12
+"HL Touring Frame - Yellow, 50",438,$353.27,2012-05-12
+"HL Touring Frame - Yellow, 54",438,$304.51,2012-05-12
+"HL Touring Frame - Blue, 46",438,$305.82,2012-05-12
+"HL Touring Frame - Blue, 50",438,$311.54,2012-05-12
+"HL Touring Frame - Blue, 54",438,$311.60,2012-05-12
+"HL Touring Frame - Blue, 60",438,$318.06,2012-05-12
+Rear Derailleur,438,$38.83,2012-05-12
+"LL Touring Frame - Blue, 50",438,$105.33,2012-05-12
+"LL Touring Frame - Blue, 54",438,$119.18,2012-05-12
+"LL Touring Frame - Blue, 58",438,$102.44,2012-05-12
+"LL Touring Frame - Blue, 62",438,$99.92,2012-05-12
+"LL Touring Frame - Yellow, 44",438,$110.28,2012-05-12
+"LL Touring Frame - Yellow, 50",438,$97.27,2012-05-12
+"LL Touring Frame - Yellow, 54",438,$181.29,2012-05-12
+"LL Touring Frame - Yellow, 58",438,$121.98,2012-05-12
+"LL Touring Frame - Blue, 44",438,$105.60,2012-05-12
+"ML Mountain Frame-W - Silver, 40",438,$123.07,2012-05-12
+"ML Mountain Frame-W - Silver, 42",438,$116.40,2012-05-12
+"ML Mountain Frame-W - Silver, 46",438,$122.11,2012-05-12
+Rear Brakes,438,$35.87,2012-05-12
+LL Mountain Seat/Saddle,438,$9.09,2012-05-12
+ML Mountain Seat/Saddle,438,$12.74,2012-05-12
+HL Mountain Seat/Saddle,438,$17.59,2012-05-12
+LL Road Seat/Saddle,438,$9.72,2012-05-12
+ML Road Seat/Saddle,438,$16.63,2012-05-12
+HL Road Seat/Saddle,438,$20.96,2012-05-12
+LL Touring Seat/Saddle,438,$8.00,2012-05-12
+ML Touring Seat/Saddle,438,$12.72,2012-05-12
+HL Touring Seat/Saddle,438,$15.45,2012-05-12
+"LL Mountain Frame - Silver, 42",438,$79.73,2012-05-12
+"LL Mountain Frame - Silver, 44",438,$90.77,2012-05-12
+"LL Mountain Frame - Silver, 48",438,$88.12,2012-05-12
+"LL Mountain Frame - Silver, 52",438,$76.38,2012-05-12
+Mountain Tire Tube,438,$1.69,2012-05-12
+Road Tire Tube,438,$1.31,2012-05-12
+Touring Tire Tube,438,$1.70,2012-05-12
+"LL Mountain Frame - Black, 42",438,$70.34,2012-05-12
+"LL Mountain Frame - Black, 44",438,$78.91,2012-05-12
+"LL Mountain Frame - Black, 48",438,$80.66,2012-05-12
+"LL Mountain Frame - Black, 52",438,$132.56,2012-05-12
+LL Mountain Tire,438,$8.38,2012-05-12
+ML Mountain Tire,438,$9.57,2012-05-12
+HL Mountain Tire,438,$12.84,2012-05-12
+LL Road Tire,438,$8.02,2012-05-12
+ML Road Tire,438,$9.54,2012-05-12
+HL Road Tire,438,$12.99,2012-05-12
+Touring Tire,438,$9.93,2012-05-12
+LL Mountain Pedal,438,$15.30,2012-05-12
+ML Mountain Pedal,438,$19.25,2012-05-12
+HL Mountain Pedal,438,$23.16,2012-05-12
+LL Road Pedal,438,$13.23,2012-05-12
+ML Road Pedal,438,$25.76,2012-05-12
+HL Road Pedal,438,$29.12,2012-05-12
+Touring Pedal,438,$25.41,2012-05-12
+"ML Mountain Frame-W - Silver, 38",438,$211.39,2012-05-12
+"LL Mountain Frame - Black, 40",438,$131.77,2012-05-12
+"LL Mountain Frame - Silver, 40",438,$83.81,2012-05-12
+Front Derailleur,438,$27.64,2012-05-12
+LL Touring Handlebars,438,$15.21,2012-05-12
+HL Touring Handlebars,438,$26.68,2012-05-12
+Front Brakes,438,$29.15,2012-05-12
+LL Crankset,438,$60.83,2012-05-12
+ML Crankset,438,$99.44,2012-05-12
+HL Crankset,438,$122.22,2012-05-12
+Chain,438,$6.46,2012-05-12
+"Touring-2000 Blue, 60",88,$370.83,2012-05-12
+"Touring-1000 Yellow, 46",88,$462.77,2012-05-12
+"Touring-1000 Yellow, 50",88,$546.29,2012-05-12
+"Touring-1000 Yellow, 54",88,$571.37,2012-05-12
+"Touring-1000 Yellow, 60",88,$505.54,2012-05-12
+"Touring-3000 Blue, 54",88,$174.16,2012-05-12
+"Touring-3000 Blue, 58",88,$195.90,2012-05-12
+"Touring-3000 Blue, 62",88,$197.17,2012-05-12
+"Touring-3000 Yellow, 44",88,$171.06,2012-05-12
+"Touring-3000 Yellow, 50",88,$169.79,2012-05-12
+"Touring-3000 Yellow, 54",88,$164.63,2012-05-12
+"Touring-3000 Yellow, 58",88,$177.57,2012-05-12
+"Touring-3000 Yellow, 62",88,$170.42,2012-05-12
+"Touring-1000 Blue, 46",88,$768.90,2012-05-12
+"Touring-1000 Blue, 50",88,$680.40,2012-05-12
+"Touring-1000 Blue, 54",88,$773.59,2012-05-12
+"Touring-1000 Blue, 60",88,$735.39,2012-05-12
+"Touring-2000 Blue, 46",88,$388.35,2012-05-12
+"Touring-2000 Blue, 50",88,$410.16,2012-05-12
+"Touring-2000 Blue, 54",88,$384.59,2012-05-12
+"Road-350-W Yellow, 40",88,$632.08,2012-05-12
+"Road-350-W Yellow, 42",88,$541.25,2012-05-12
+"Road-350-W Yellow, 44",88,$665.25,2012-05-12
+"Road-350-W Yellow, 48",88,$637.81,2012-05-12
+"Road-750 Black, 58",88,$235.11,2012-05-12
+"Touring-3000 Blue, 44",88,$179.89,2012-05-12
+"Touring-3000 Blue, 50",88,$168.66,2012-05-12
+"Mountain-400-W Silver, 38",88,$301.66,2012-05-12
+"Mountain-400-W Silver, 40",88,$285.94,2012-05-12
+"Mountain-400-W Silver, 42",88,$300.67,2012-05-12
+"Mountain-400-W Silver, 46",88,$286.20,2012-05-12
+"Mountain-500 Silver, 40",88,$71.73,2012-05-12
+"Mountain-500 Silver, 42",88,$66.44,2012-05-12
+"Mountain-500 Silver, 44",88,$78.65,2012-05-12
+"Mountain-500 Silver, 48",88,$80.87,2012-05-12
+"Mountain-500 Silver, 52",88,$66.36,2012-05-12
+"Mountain-500 Black, 40",88,$200.06,2012-05-12
+"Mountain-500 Black, 42",88,$163.51,2012-05-12
+"Mountain-500 Black, 44",88,$219.26,2012-05-12
+"Mountain-500 Black, 48",88,$162.87,2012-05-12
+"Mountain-500 Black, 52",88,$221.31,2012-05-12
+LL Bottom Bracket,438,$15.64,2012-05-12
+ML Bottom Bracket,438,$40.96,2012-05-12
+HL Bottom Bracket,438,$35.74,2012-05-12
+"Road-750 Black, 44",88,$211.81,2012-05-12
+"Road-750 Black, 48",88,$182.82,2012-05-12
+"Road-750 Black, 52",88,$218.72,2012-05-12

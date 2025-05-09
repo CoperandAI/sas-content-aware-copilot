@@ -1,0 +1,4 @@
+SalesOrderNumber,OrderDate,CustomerName,ProductName,OrderQuantity,SalesAmount
+SO48174,2012-05-14,Jeffery                                            Chen,"Road-250 Red, 52",1,"$2,443.35"
+SO48175,2012-05-14,Taylor                                             Ross,"Mountain-200 Silver, 42",1,"$2,071.42"
+SO48176,2012-05-14,Amanda                                             Griffin,"Road-650 Black, 62",1,$782.99

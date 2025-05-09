@@ -1,0 +1,121 @@
+{
+  "database": {
+    "name": "AdventureWorksDW2022",
+    "sas_library": "sas_dw",
+    "tables": {
+      "DimCustomer": {
+        "source": "AdventureWorksDW2022.dbo.DimCustomer",
+        "columns": {
+          "CustomerKey": "Primary Key",
+          "FirstName": "Customer First Name",
+          "LastName": "Customer Last Name",
+          "EmailAddress": "Customer Email",
+          "DateFirstPurchase": "First Purchase Date (used for new customer reports)"
+        }
+      },
+      "DimProduct": {
+        "source": "AdventureWorksDW2022.dbo.DimProduct",
+        "columns": {
+          "ProductKey": "Primary Key",
+          "EnglishProductName": "Product Name",
+          "StandardCost": "Standard Cost",
+          "ListPrice": "List Price"
+        }
+      },
+      "DimDate": {
+        "source": "AdventureWorksDW2022.dbo.DimDate",
+        "columns": {
+          "DateKey": "Primary Key",
+          "FullDateAlternateKey": "Full Date (YYYY-MM-DD, used for filtering)",
+          "CalendarYear": "Year",
+          "MonthNumberOfYear": "Month Number"
+        }
+      },
+      "FactInternetSales": {
+        "source": "AdventureWorksDW2022.dbo.FactInternetSales",
+        "columns": {
+          "SalesOrderNumber": "Sales Order Identifier",
+          "OrderDateKey": "FK to DimDate",
+          "CustomerKey": "FK to DimCustomer",
+          "ProductKey": "FK to DimProduct",
+          "SalesAmount": "Total Sale Amount"
+        }
+      },
+      "FactResellerSales": {
+        "source": "AdventureWorksDW2022.dbo.FactResellerSales",
+        "columns": {
+          "ResellerKey": "FK to DimReseller",
+          "EmployeeKey": "FK to DimEmployee",
+          "SalesAmount": "Total Sales Amount",
+          "OrderQuantity": "Total Order Quantity"
+        }
+      }
+    }
+  },
+  "sas_environment": {
+	"sas_code": "ADV_SAS_ENV_SETUP.sas",  
+    "libname": "LIBNAME sas_dw OLEDB INIT_STRING=\"Provider=SQLOLEDB; Password=sas_user123; User ID=sas_user; Initial Catalog=AdventureWorksDW2022; Data Source=192.168.121.1;\";",
+    "macros": {
+      "report_date": "%LET report_date = %SYSFUNC(PUTN(TODAY(), YYMMDD10.));"
+    }
+  },
+  "etl_staging": {
+	"sas_code": "ADV_STG_DAILY_BATCH.sas",   
+    "FactInternetSales": "Extract data from SQL Server and filter using DimDate.FullDateAlternateKey",
+    "FactResellerSales": "Extract data related to reseller sales using OrderDateKey"
+  },
+  "report_workflow": {
+    "ADV_REPORT_DAILY_BATCH.sas": {
+      "runs": [
+        "ADV_STG_DAILY_BATCH.sas",
+        "ADV_R001_SALES_DAILY.sas",
+        "ADV_R002_PRODUCT_INVENTORY_DAILY.sas",
+        "ADV_R003_NEW_CUSTOMER_DAILY.sas",
+        "ADV_R004_RESELLERS_PERFORMANCE_DAILY.sas",
+        "ADV_R005_EMPL_SALES_PERFORMANCE_DAILY.sas"
+      ]
+    }
+  },
+  "report_definitions": {
+    "sales_report": {
+      "sas_code": "ADV_R001_SALES_DAILY.sas",		
+      "source": "FactInternetSales",
+      "joins": ["DimDate", "DimCustomer", "DimProduct"],
+      "filter": "FullDateAlternateKey = &report_date",
+      "aggregations": ["OrderQuantity", "SalesAmount"],
+      "export": "CSV"
+    },
+    "inventory_report": {
+	  "sas_code": "ADV_R002_PRODUCT_INVENTORY_DAILY.sas",	
+      "source": "FactProductInventory",
+      "joins": ["DimProduct", "DimDate"],
+      "filter": "FullDateAlternateKey = &report_date",
+      "aggregations": ["QuantityOnHand", "UnitCost"],
+      "export": "CSV"
+    },
+    "new_customers_report": {
+	  "sas_code": "ADV_R003_NEW_CUSTOMER_DAILY.sas",	
+      "source": "DimCustomer",
+      "joins": ["DimGeography"],
+      "filter": "DateFirstPurchase = &report_date",
+      "aggregations": ["Customer Count by Country"],
+      "export": "CSV"
+    },
+    "reseller_report": {
+	  "sas_code": "ADV_R004_RESELLERS_PERFORMANCE_DAILY.sas",	
+      "source": "FactResellerSales",
+      "joins": ["DimReseller", "DimDate"],
+      "filter": "FullDateAlternateKey = &report_date",
+      "aggregations": ["OrderQuantity", "SalesAmount"],
+      "export": "CSV"
+    },
+    "employee_report": {
+	  "sas_code": "ADV_R005_EMPL_SALES_PERFORMANCE_DAILY.sas",	
+      "source": "FactSalesQuota",
+      "joins": ["DimEmployee", "DimDate"],
+      "filter": "FullDateAlternateKey = &report_date",
+      "aggregations": ["SalesAmountQuota"],
+      "export": "CSV"
+    }
+  }
+}

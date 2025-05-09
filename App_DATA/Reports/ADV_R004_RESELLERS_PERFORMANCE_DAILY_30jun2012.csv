@@ -1,0 +1,984 @@
+ResellerName,OrderDate,OrderQuantity,SalesAmount
+Better Bike Shop,2012-06-30,3,"$1,943.98"
+Better Bike Shop,2012-06-30,2,"$1,295.99"
+Better Bike Shop,2012-06-30,1,$647.99
+Better Bike Shop,2012-06-30,6,"$3,887.96"
+Better Bike Shop,2012-06-30,3,"$3,688.38"
+Better Bike Shop,2012-06-30,3,"$3,688.38"
+Better Bike Shop,2012-06-30,3,"$3,688.38"
+Better Bike Shop,2012-06-30,6,"$7,457.11"
+Better Bike Shop,2012-06-30,2,"$2,485.70"
+Better Bike Shop,2012-06-30,4,"$4,971.41"
+Better Bike Shop,2012-06-30,1,$33.77
+Better Bike Shop,2012-06-30,1,$141.62
+Better Bike Shop,2012-06-30,2,$392.66
+Better Bike Shop,2012-06-30,3,$627.77
+Better Bike Shop,2012-06-30,5,$144.20
+Better Bike Shop,2012-06-30,6,$269.96
+Better Bike Shop,2012-06-30,1,$44.99
+Better Bike Shop,2012-06-30,1,$53.99
+Better Bike Shop,2012-06-30,12,$259.12
+Better Bike Shop,2012-06-30,9,$205.15
+Better Bike Shop,2012-06-30,3,$15.56
+Better Bike Shop,2012-06-30,2,$40.37
+Gift and Toy Store,2012-06-30,3,"$1,409.38"
+Gift and Toy Store,2012-06-30,2,$939.59
+Gift and Toy Store,2012-06-30,2,$939.59
+Gift and Toy Store,2012-06-30,4,"$1,879.18"
+Gift and Toy Store,2012-06-30,4,"$1,879.18"
+Basic Bike Company,2012-06-30,1,$35.99
+Basic Bike Company,2012-06-30,1,$324.45
+Basic Bike Company,2012-06-30,1,$53.99
+Recreation Toy Store,2012-06-30,3,$68.38
+Recreation Toy Store,2012-06-30,1,$647.99
+Recreation Toy Store,2012-06-30,3,$161.98
+Valuable Bike Parts Company,2012-06-30,3,"$3,728.56"
+Valuable Bike Parts Company,2012-06-30,2,"$2,485.70"
+Valuable Bike Parts Company,2012-06-30,4,$215.98
+Valuable Bike Parts Company,2012-06-30,3,$15.56
+Valuable Bike Parts Company,2012-06-30,5,$179.97
+Valuable Bike Parts Company,2012-06-30,3,"$1,943.98"
+Valuable Bike Parts Company,2012-06-30,2,"$1,295.99"
+Valuable Bike Parts Company,2012-06-30,2,$418.51
+Valuable Bike Parts Company,2012-06-30,6,$136.76
+Valuable Bike Parts Company,2012-06-30,2,$392.66
+Valuable Bike Parts Company,2012-06-30,1,$141.62
+Valuable Bike Parts Company,2012-06-30,3,$86.52
+Valuable Bike Parts Company,2012-06-30,1,$647.99
+Valuable Bike Parts Company,2012-06-30,5,"$6,147.29"
+Valuable Bike Parts Company,2012-06-30,2,"$2,458.92"
+Valuable Bike Parts Company,2012-06-30,3,$60.56
+Valuable Bike Parts Company,2012-06-30,2,$89.99
+Valuable Bike Parts Company,2012-06-30,3,"$1,943.98"
+Valuable Bike Parts Company,2012-06-30,2,$40.37
+Valuable Bike Parts Company,2012-06-30,5,$224.97
+Valuable Bike Parts Company,2012-06-30,1,$209.26
+Valuable Bike Parts Company,2012-06-30,4,$91.18
+First Bike Store,2012-06-30,5,"$2,348.97"
+First Bike Store,2012-06-30,2,"$1,200.53"
+First Bike Store,2012-06-30,5,"$2,348.97"
+First Bike Store,2012-06-30,6,"$3,601.58"
+First Bike Store,2012-06-30,2,"$2,617.88"
+First Bike Store,2012-06-30,2,"$2,932.02"
+First Bike Store,2012-06-30,6,"$3,601.58"
+First Bike Store,2012-06-30,7,"$3,288.56"
+First Bike Store,2012-06-30,5,"$7,330.05"
+First Bike Store,2012-06-30,5,"$2,348.97"
+First Bike Store,2012-06-30,3,"$1,409.38"
+First Bike Store,2012-06-30,3,"$3,926.81"
+First Bike Store,2012-06-30,5,"$2,348.97"
+First Bike Store,2012-06-30,5,"$7,330.05"
+First Bike Store,2012-06-30,6,$121.12
+First Bike Store,2012-06-30,2,$40.37
+First Bike Store,2012-06-30,5,"$2,348.97"
+First Bike Store,2012-06-30,3,"$1,800.79"
+First Bike Store,2012-06-30,7,"$3,288.56"
+First Bike Store,2012-06-30,5,"$6,544.69"
+First Bike Store,2012-06-30,2,$939.59
+First Bike Store,2012-06-30,8,"$3,758.35"
+First Bike Store,2012-06-30,5,"$2,348.97"
+First Bike Store,2012-06-30,1,"$1,308.94"
+First Bike Store,2012-06-30,7,"$9,162.56"
+First Bike Store,2012-06-30,3,"$1,800.79"
+Large Bike Shop,2012-06-30,1,$33.77
+Area Bike Accessories,2012-06-30,1,$600.26
+Area Bike Accessories,2012-06-30,6,$323.96
+Area Bike Accessories,2012-06-30,1,$469.79
+Distant Inn,2012-06-30,2,$939.59
+Distant Inn,2012-06-30,3,"$1,409.38"
+Distant Inn,2012-06-30,1,$469.79
+Distant Inn,2012-06-30,1,$469.79
+Classic Cycle Store,2012-06-30,2,$418.51
+Classic Cycle Store,2012-06-30,1,$141.62
+Classic Cycle Store,2012-06-30,4,"$4,971.41"
+Classic Cycle Store,2012-06-30,12,$259.12
+Classic Cycle Store,2012-06-30,2,"$2,458.92"
+Classic Cycle Store,2012-06-30,5,$113.97
+Classic Cycle Store,2012-06-30,3,$588.99
+Classic Cycle Store,2012-06-30,1,$209.26
+Classic Cycle Store,2012-06-30,2,"$1,295.99"
+Classic Cycle Store,2012-06-30,2,"$2,485.70"
+Classic Cycle Store,2012-06-30,3,"$3,688.38"
+Classic Cycle Store,2012-06-30,1,$33.77
+Classic Cycle Store,2012-06-30,2,"$1,295.99"
+Classic Cycle Store,2012-06-30,4,"$2,591.98"
+Modular Cycle Systems,2012-06-30,2,$939.59
+Modular Cycle Systems,2012-06-30,3,"$1,409.38"
+Modular Cycle Systems,2012-06-30,4,"$1,879.18"
+Modular Cycle Systems,2012-06-30,4,"$1,879.18"
+Modular Cycle Systems,2012-06-30,7,"$3,288.56"
+Modular Cycle Systems,2012-06-30,8,"$3,758.35"
+Modular Cycle Systems,2012-06-30,4,"$1,879.18"
+Modular Cycle Systems,2012-06-30,3,"$1,409.38"
+Modular Cycle Systems,2012-06-30,5,"$2,348.97"
+Modular Cycle Systems,2012-06-30,8,"$3,758.35"
+Modular Cycle Systems,2012-06-30,7,"$3,288.56"
+Modular Cycle Systems,2012-06-30,2,$939.59
+Modular Cycle Systems,2012-06-30,1,$600.26
+Modular Cycle Systems,2012-06-30,3,"$1,800.79"
+Modular Cycle Systems,2012-06-30,3,"$1,800.79"
+Modular Cycle Systems,2012-06-30,1,$600.26
+Modular Cycle Systems,2012-06-30,5,"$6,544.69"
+Modular Cycle Systems,2012-06-30,7,"$9,162.56"
+Modular Cycle Systems,2012-06-30,5,"$6,544.69"
+Modular Cycle Systems,2012-06-30,5,"$6,544.69"
+Modular Cycle Systems,2012-06-30,5,"$7,330.05"
+Modular Cycle Systems,2012-06-30,5,"$7,330.05"
+Modular Cycle Systems,2012-06-30,2,"$2,932.02"
+Modular Cycle Systems,2012-06-30,2,"$2,617.88"
+Modular Cycle Systems,2012-06-30,4,$270.16
+Friendly Bike Shop,2012-06-30,3,"$1,409.38"
+Friendly Bike Shop,2012-06-30,8,"$3,758.35"
+Friendly Bike Shop,2012-06-30,5,"$6,544.69"
+Friendly Bike Shop,2012-06-30,1,$202.33
+Friendly Bike Shop,2012-06-30,7,"$4,201.84"
+Friendly Bike Shop,2012-06-30,2,$367.88
+Friendly Bike Shop,2012-06-30,5,"$1,622.26"
+Friendly Bike Shop,2012-06-30,1,$469.79
+Friendly Bike Shop,2012-06-30,5,"$3,001.31"
+Friendly Bike Shop,2012-06-30,2,$135.08
+Friendly Bike Shop,2012-06-30,1,$469.79
+Friendly Bike Shop,2012-06-30,4,"$1,879.18"
+Friendly Bike Shop,2012-06-30,3,"$1,409.38"
+Friendly Bike Shop,2012-06-30,7,"$3,288.56"
+Friendly Bike Shop,2012-06-30,1,$469.79
+Friendly Bike Shop,2012-06-30,4,"$2,401.05"
+Friendly Bike Shop,2012-06-30,3,$607.00
+Friendly Bike Shop,2012-06-30,3,"$4,398.03"
+Friendly Bike Shop,2012-06-30,5,$269.97
+Friendly Bike Shop,2012-06-30,2,$71.99
+Friendly Bike Shop,2012-06-30,3,$42.39
+All Cycle Shop,2012-06-30,2,$45.59
+Countryside Company,2012-06-30,3,$627.77
+Leather Seat Factory,2012-06-30,7,$236.42
+Leather Seat Factory,2012-06-30,11,$639.56
+Leather Seat Factory,2012-06-30,5,$121.47
+Leather Seat Factory,2012-06-30,3,$424.85
+Leather Seat Factory,2012-06-30,4,$837.02
+Leather Seat Factory,2012-06-30,2,$72.89
+Leather Seat Factory,2012-06-30,4,$785.32
+Leather Seat Factory,2012-06-30,4,$837.02
+Leather Seat Factory,2012-06-30,2,"$1,488.55"
+Leather Seat Factory,2012-06-30,4,"$4,917.84"
+Leather Seat Factory,2012-06-30,4,"$4,971.41"
+Leather Seat Factory,2012-06-30,1,$736.15
+Leather Seat Factory,2012-06-30,3,$413.08
+Leather Seat Factory,2012-06-30,2,$45.59
+Leather Seat Factory,2012-06-30,2,"$2,458.92"
+Go-cart and Bike Specialists,2012-06-30,6,$269.96
+Go-cart and Bike Specialists,2012-06-30,2,$67.55
+Go-cart and Bike Specialists,2012-06-30,2,$57.68
+Go-cart and Bike Specialists,2012-06-30,3,$627.77
+Go-cart and Bike Specialists,2012-06-30,8,$41.49
+Go-cart and Bike Specialists,2012-06-30,5,$75.00
+Go-cart and Bike Specialists,2012-06-30,2,$107.99
+Go-cart and Bike Specialists,2012-06-30,7,$98.90
+Go-cart and Bike Specialists,2012-06-30,3,"$2,208.44"
+Go-cart and Bike Specialists,2012-06-30,2,$72.89
+Go-cart and Bike Specialists,2012-06-30,6,$368.24
+Go-cart and Bike Specialists,2012-06-30,6,$173.04
+Go-cart and Bike Specialists,2012-06-30,1,$209.26
+Go-cart and Bike Specialists,2012-06-30,1,$44.99
+Go-cart and Bike Specialists,2012-06-30,2,$40.37
+Go-cart and Bike Specialists,2012-06-30,4,$566.46
+Go-cart and Bike Specialists,2012-06-30,2,$40.37
+Go-cart and Bike Specialists,2012-06-30,2,"$2,458.92"
+Go-cart and Bike Specialists,2012-06-30,1,$744.27
+Go-cart and Bike Specialists,2012-06-30,3,$60.56
+Go-cart and Bike Specialists,2012-06-30,3,$413.08
+Go-cart and Bike Specialists,2012-06-30,4,$91.18
+Go-cart and Bike Specialists,2012-06-30,3,$35.98
+Great Bikes,2012-06-30,9,"$5,831.95"
+Great Bikes,2012-06-30,4,$115.36
+Great Bikes,2012-06-30,2,$89.99
+Great Bikes,2012-06-30,8,"$9,835.67"
+Great Bikes,2012-06-30,3,"$3,688.38"
+Great Bikes,2012-06-30,5,$981.65
+Great Bikes,2012-06-30,7,"$8,699.96"
+Great Bikes,2012-06-30,8,"$9,942.81"
+Great Bikes,2012-06-30,2,"$1,295.99"
+Great Bikes,2012-06-30,4,$135.10
+Great Bikes,2012-06-30,8,"$9,835.67"
+Great Bikes,2012-06-30,6,$849.69
+Great Bikes,2012-06-30,2,$418.51
+Great Bikes,2012-06-30,2,$89.99
+Great Bikes,2012-06-30,9,$205.15
+Great Bikes,2012-06-30,6,$136.76
+Great Bikes,2012-06-30,1,$647.99
+Great Bikes,2012-06-30,11,"$12,951.34"
+Great Bikes,2012-06-30,3,$15.56
+Great Bikes,2012-06-30,9,"$5,831.95"
+First Department Stores,2012-06-30,4,$91.18
+First Department Stores,2012-06-30,4,"$4,917.84"
+First Department Stores,2012-06-30,3,"$3,688.38"
+First Department Stores,2012-06-30,1,$22.79
+First Department Stores,2012-06-30,1,$22.79
+This Area Sporting Goods,2012-06-30,1,"$1,229.46"
+This Area Sporting Goods,2012-06-30,4,$91.18
+This Area Sporting Goods,2012-06-30,8,$182.35
+This Area Sporting Goods,2012-06-30,2,$45.59
+Western Bike Supplies,2012-06-30,2,$939.59
+Western Bike Supplies,2012-06-30,1,$469.79
+Western Bike Supplies,2012-06-30,1,$469.79
+Western Bike Supplies,2012-06-30,3,"$1,409.38"
+Retail Mall,2012-06-30,1,$5.19
+Retail Mall,2012-06-30,6,$121.12
+Retail Mall,2012-06-30,1,$28.84
+Retail Mall,2012-06-30,2,"$1,200.53"
+Retail Mall,2012-06-30,4,$809.33
+Retail Mall,2012-06-30,6,"$2,818.76"
+Retail Mall,2012-06-30,1,$35.99
+Retail Mall,2012-06-30,4,$47.98
+Retail Mall,2012-06-30,5,"$1,011.66"
+Retail Mall,2012-06-30,3,$60.56
+Retail Mall,2012-06-30,9,$404.95
+Retail Mall,2012-06-30,5,$70.64
+Retail Mall,2012-06-30,3,$161.98
+Retail Mall,2012-06-30,3,"$1,409.38"
+Retail Mall,2012-06-30,6,"$3,601.58"
+Retail Mall,2012-06-30,3,"$1,409.38"
+Retail Mall,2012-06-30,15,"$6,136.68"
+Retail Mall,2012-06-30,3,"$1,409.38"
+Retail Mall,2012-06-30,2,$57.68
+Retail Mall,2012-06-30,5,"$2,348.97"
+Retail Mall,2012-06-30,6,"$2,818.76"
+Retail Mall,2012-06-30,2,"$2,932.02"
+Retail Mall,2012-06-30,2,$396.07
+Retail Mall,2012-06-30,8,"$1,618.66"
+Retail Mall,2012-06-30,5,"$1,622.26"
+Retail Mall,2012-06-30,5,"$3,001.31"
+Retail Mall,2012-06-30,3,$107.98
+Retail Mall,2012-06-30,5,$100.93
+Retail Mall,2012-06-30,5,$269.97
+Retail Mall,2012-06-30,4,$270.16
+Retail Mall,2012-06-30,2,$367.88
+Retail Mall,2012-06-30,5,$75.00
+Retail Mall,2012-06-30,3,"$3,926.81"
+Retail Mall,2012-06-30,3,$973.36
+Retail Mall,2012-06-30,5,$224.97
+Retail Mall,2012-06-30,2,"$2,932.02"
+Retail Mall,2012-06-30,4,"$1,297.81"
+Retail Mall,2012-06-30,2,$71.99
+Retail Mall,2012-06-30,1,$469.79
+Retail Mall,2012-06-30,4,$115.36
+Retail Mall,2012-06-30,3,$551.81
+Retail Mall,2012-06-30,3,$42.39
+Retail Mall,2012-06-30,4,"$5,235.75"
+Retail Mall,2012-06-30,7,"$1,416.32"
+Seventh Bike Store,2012-06-30,3,"$4,398.03"
+Seventh Bike Store,2012-06-30,3,"$1,409.38"
+Seventh Bike Store,2012-06-30,5,"$2,348.97"
+Seventh Bike Store,2012-06-30,3,"$1,409.38"
+Seventh Bike Store,2012-06-30,1,$600.26
+Seventh Bike Store,2012-06-30,3,$134.98
+Seventh Bike Store,2012-06-30,5,"$7,330.05"
+Seventh Bike Store,2012-06-30,1,$469.79
+Seventh Bike Store,2012-06-30,1,"$1,466.01"
+Seventh Bike Store,2012-06-30,4,$20.75
+Seventh Bike Store,2012-06-30,1,"$1,308.94"
+Seventh Bike Store,2012-06-30,2,$939.59
+Seventh Bike Store,2012-06-30,2,"$1,200.53"
+Seventh Bike Store,2012-06-30,2,$939.59
+Seventh Bike Store,2012-06-30,4,"$5,235.75"
+Seventh Bike Store,2012-06-30,4,"$2,401.05"
+Seventh Bike Store,2012-06-30,3,"$1,409.38"
+Seventh Bike Store,2012-06-30,2,$939.59
+Seventh Bike Store,2012-06-30,2,$40.37
+Seventh Bike Store,2012-06-30,2,$939.59
+Seventh Bike Store,2012-06-30,1,$600.26
+Seventh Bike Store,2012-06-30,5,$144.20
+Seventh Bike Store,2012-06-30,2,"$2,617.88"
+Seventh Bike Store,2012-06-30,1,$44.99
+Seventh Bike Store,2012-06-30,1,$20.19
+Seventh Bike Store,2012-06-30,4,"$2,401.05"
+Seventh Bike Store,2012-06-30,1,"$1,308.94"
+Hobby Store,2012-06-30,1,$647.99
+Immediate Repair Shop,2012-06-30,3,$588.99
+Immediate Repair Shop,2012-06-30,3,"$1,943.98"
+Immediate Repair Shop,2012-06-30,2,"$1,295.99"
+Immediate Repair Shop,2012-06-30,4,"$4,917.84"
+Immediate Repair Shop,2012-06-30,4,"$4,971.41"
+Immediate Repair Shop,2012-06-30,3,"$3,688.38"
+Immediate Repair Shop,2012-06-30,9,$205.15
+Immediate Repair Shop,2012-06-30,6,"$3,887.96"
+Immediate Repair Shop,2012-06-30,1,$141.62
+Immediate Repair Shop,2012-06-30,5,$168.87
+Immediate Repair Shop,2012-06-30,6,"$7,457.11"
+Immediate Repair Shop,2012-06-30,2,$418.51
+Immediate Repair Shop,2012-06-30,1,$647.99
+Original Bicycle Supply Company,2012-06-30,1,"$1,229.46"
+Original Bicycle Supply Company,2012-06-30,4,$179.98
+Original Bicycle Supply Company,2012-06-30,1,"$1,242.85"
+Original Bicycle Supply Company,2012-06-30,3,$42.39
+Original Bicycle Supply Company,2012-06-30,5,"$1,046.28"
+Original Bicycle Supply Company,2012-06-30,1,$744.27
+Original Bicycle Supply Company,2012-06-30,2,"$2,458.92"
+Original Bicycle Supply Company,2012-06-30,2,$275.39
+Original Bicycle Supply Company,2012-06-30,1,$24.29
+Original Bicycle Supply Company,2012-06-30,3,$107.98
+Original Bicycle Supply Company,2012-06-30,1,$209.26
+Original Bicycle Supply Company,2012-06-30,3,$161.98
+Original Bicycle Supply Company,2012-06-30,2,"$1,295.99"
+Original Bicycle Supply Company,2012-06-30,2,$40.37
+Original Bicycle Supply Company,2012-06-30,3,$588.99
+Original Bicycle Supply Company,2012-06-30,1,$22.79
+Original Bicycle Supply Company,2012-06-30,3,$107.98
+Original Bicycle Supply Company,2012-06-30,2,"$2,485.70"
+Original Bicycle Supply Company,2012-06-30,2,"$1,472.29"
+Original Bicycle Supply Company,2012-06-30,5,$708.08
+Original Bicycle Supply Company,2012-06-30,2,"$2,485.70"
+Original Bicycle Supply Company,2012-06-30,3,$101.32
+Original Bicycle Supply Company,2012-06-30,4,$91.18
+Original Bicycle Supply Company,2012-06-30,2,$72.89
+Original Bicycle Supply Company,2012-06-30,2,"$1,488.55"
+Original Bicycle Supply Company,2012-06-30,5,$59.97
+Original Bicycle Supply Company,2012-06-30,4,$20.75
+Original Bicycle Supply Company,2012-06-30,4,$115.36
+Original Bicycle Supply Company,2012-06-30,1,$28.84
+Original Bicycle Supply Company,2012-06-30,5,$75.00
+Original Bicycle Supply Company,2012-06-30,6,$121.12
+Original Bicycle Supply Company,2012-06-30,6,$269.96
+Original Bicycle Supply Company,2012-06-30,3,$627.77
+Original Bicycle Supply Company,2012-06-30,2,"$1,295.99"
+Original Bicycle Supply Company,2012-06-30,1,$14.13
+Original Bicycle Supply Company,2012-06-30,3,$161.98
+Original Bicycle Supply Company,2012-06-30,4,$80.75
+Original Bicycle Supply Company,2012-06-30,4,$115.36
+Original Bicycle Supply Company,2012-06-30,1,$647.99
+Original Bicycle Supply Company,2012-06-30,2,"$1,295.99"
+Original Bicycle Supply Company,2012-06-30,1,$736.15
+Spare Parts Co.,2012-06-30,2,$67.55
+Spare Parts Co.,2012-06-30,2,"$2,458.92"
+Spare Parts Co.,2012-06-30,1,$647.99
+Spare Parts Co.,2012-06-30,2,"$1,295.99"
+Spare Parts Co.,2012-06-30,2,$418.51
+Spare Parts Co.,2012-06-30,1,$209.26
+Spare Parts Co.,2012-06-30,2,"$2,485.70"
+Spare Parts Co.,2012-06-30,10,$227.94
+Spare Parts Co.,2012-06-30,3,$134.98
+Spare Parts Co.,2012-06-30,1,$196.33
+Spare Parts Co.,2012-06-30,2,$57.68
+Spare Parts Co.,2012-06-30,4,"$4,917.84"
+Spare Parts Co.,2012-06-30,5,"$6,147.29"
+Spare Parts Co.,2012-06-30,14,$302.31
+Spare Parts Co.,2012-06-30,5,"$3,239.97"
+Spare Parts Co.,2012-06-30,3,"$1,943.98"
+Spare Parts Co.,2012-06-30,2,$10.37
+Spare Parts Co.,2012-06-30,5,$224.97
+The Bike Shop,2012-06-30,1,$647.99
+Latest Sports Equipment,2012-06-30,3,$68.38
+Latest Sports Equipment,2012-06-30,4,$179.98
+Latest Sports Equipment,2012-06-30,3,$627.77
+Latest Sports Equipment,2012-06-30,4,$115.36
+Latest Sports Equipment,2012-06-30,15,$297.75
+Latest Sports Equipment,2012-06-30,4,"$4,971.41"
+Latest Sports Equipment,2012-06-30,2,$392.66
+Latest Sports Equipment,2012-06-30,3,"$3,688.38"
+Latest Sports Equipment,2012-06-30,1,$209.26
+Latest Sports Equipment,2012-06-30,7,"$8,699.96"
+Latest Sports Equipment,2012-06-30,3,"$1,943.98"
+Latest Sports Equipment,2012-06-30,3,$134.98
+Latest Sports Equipment,2012-06-30,4,$566.46
+Latest Sports Equipment,2012-06-30,4,"$4,917.84"
+Latest Sports Equipment,2012-06-30,10,"$12,428.52"
+Latest Sports Equipment,2012-06-30,10,"$12,294.59"
+Latest Sports Equipment,2012-06-30,3,$15.56
+Latest Sports Equipment,2012-06-30,6,"$3,887.96"
+Latest Sports Equipment,2012-06-30,4,"$2,591.98"
+Latest Sports Equipment,2012-06-30,9,"$5,831.95"
+Real Sporting Goods,2012-06-30,6,$136.76
+Real Sporting Goods,2012-06-30,3,$161.98
+Real Sporting Goods,2012-06-30,2,$71.99
+Real Sporting Goods,2012-06-30,4,$80.75
+Real Sporting Goods,2012-06-30,3,"$3,688.38"
+Real Sporting Goods,2012-06-30,1,$744.27
+Real Sporting Goods,2012-06-30,1,$736.15
+Real Sporting Goods,2012-06-30,6,"$7,457.11"
+Real Sporting Goods,2012-06-30,3,$45.00
+Real Sporting Goods,2012-06-30,5,$224.97
+Real Sporting Goods,2012-06-30,4,$245.50
+Real Sporting Goods,2012-06-30,3,"$3,728.56"
+Real Sporting Goods,2012-06-30,3,$86.52
+Real Sporting Goods,2012-06-30,2,$418.51
+Real Sporting Goods,2012-06-30,1,$196.33
+Real Sporting Goods,2012-06-30,1,$736.15
+Real Sporting Goods,2012-06-30,5,"$3,239.97"
+Real Sporting Goods,2012-06-30,1,$74.84
+Real Sporting Goods,2012-06-30,2,"$2,458.92"
+Real Sporting Goods,2012-06-30,10,$359.94
+Real Sporting Goods,2012-06-30,5,$70.64
+Real Sporting Goods,2012-06-30,5,"$3,239.97"
+Real Sporting Goods,2012-06-30,3,"$3,688.38"
+Real Sporting Goods,2012-06-30,1,$141.62
+Real Sporting Goods,2012-06-30,2,"$1,295.99"
+Real Sporting Goods,2012-06-30,4,$80.75
+Real Sporting Goods,2012-06-30,1,$209.26
+Real Sporting Goods,2012-06-30,1,$647.99
+Real Sporting Goods,2012-06-30,4,$215.98
+Real Sporting Goods,2012-06-30,3,$60.56
+Real Sporting Goods,2012-06-30,3,$413.08
+Real Sporting Goods,2012-06-30,8,$41.49
+Real Sporting Goods,2012-06-30,5,$224.97
+Real Sporting Goods,2012-06-30,2,$48.59
+Real Sporting Goods,2012-06-30,1,$28.84
+Real Sporting Goods,2012-06-30,2,"$2,485.70"
+Real Sporting Goods,2012-06-30,4,$115.36
+Real Sporting Goods,2012-06-30,3,"$2,232.82"
+Real Sporting Goods,2012-06-30,1,$36.45
+Real Sporting Goods,2012-06-30,5,$59.97
+Trusted Catalog Store,2012-06-30,1,"$1,229.46"
+Trusted Catalog Store,2012-06-30,2,$45.59
+Juvenile Sports Equipment,2012-06-30,5,$113.97
+Juvenile Sports Equipment,2012-06-30,3,$86.52
+Juvenile Sports Equipment,2012-06-30,6,"$7,457.11"
+Juvenile Sports Equipment,2012-06-30,2,"$1,295.99"
+Juvenile Sports Equipment,2012-06-30,1,$647.99
+Juvenile Sports Equipment,2012-06-30,4,"$4,971.41"
+Juvenile Sports Equipment,2012-06-30,2,"$2,458.92"
+Juvenile Sports Equipment,2012-06-30,1,$53.99
+Juvenile Sports Equipment,2012-06-30,1,$141.62
+Juvenile Sports Equipment,2012-06-30,1,$35.99
+Juvenile Sports Equipment,2012-06-30,3,$101.32
+Juvenile Sports Equipment,2012-06-30,5,$981.65
+Juvenile Sports Equipment,2012-06-30,3,$15.56
+Juvenile Sports Equipment,2012-06-30,2,$89.99
+Juvenile Sports Equipment,2012-06-30,9,$205.15
+Juvenile Sports Equipment,2012-06-30,8,$359.95
+Juvenile Sports Equipment,2012-06-30,1,$20.19
+Juvenile Sports Equipment,2012-06-30,2,"$2,458.92"
+Juvenile Sports Equipment,2012-06-30,1,$209.26
+Citywide Service and Repair,2012-06-30,5,$70.64
+Citywide Service and Repair,2012-06-30,2,$404.66
+Citywide Service and Repair,2012-06-30,4,"$1,879.18"
+Citywide Service and Repair,2012-06-30,3,"$1,409.38"
+Citywide Service and Repair,2012-06-30,8,$431.95
+Citywide Service and Repair,2012-06-30,6,$90.00
+Citywide Service and Repair,2012-06-30,1,$20.19
+Citywide Service and Repair,2012-06-30,5,"$3,001.31"
+Citywide Service and Repair,2012-06-30,2,$939.59
+Citywide Service and Repair,2012-06-30,2,$57.68
+Citywide Service and Repair,2012-06-30,5,$59.97
+Citywide Service and Repair,2012-06-30,3,$134.98
+Citywide Service and Repair,2012-06-30,3,"$1,409.38"
+Citywide Service and Repair,2012-06-30,3,$202.62
+Citywide Service and Repair,2012-06-30,3,$86.52
+Citywide Service and Repair,2012-06-30,5,$144.20
+Citywide Service and Repair,2012-06-30,4,$80.75
+Citywide Service and Repair,2012-06-30,6,$323.96
+Citywide Service and Repair,2012-06-30,8,"$3,758.35"
+Citywide Service and Repair,2012-06-30,2,"$2,932.02"
+Citywide Service and Repair,2012-06-30,1,$202.33
+Citywide Service and Repair,2012-06-30,1,$324.45
+Citywide Service and Repair,2012-06-30,3,$60.56
+Citywide Service and Repair,2012-06-30,2,$367.88
+Citywide Service and Repair,2012-06-30,1,$202.33
+Citywide Service and Repair,2012-06-30,1,$35.99
+Citywide Service and Repair,2012-06-30,2,"$2,932.02"
+Citywide Service and Repair,2012-06-30,1,$600.26
+Citywide Service and Repair,2012-06-30,5,$224.97
+Citywide Service and Repair,2012-06-30,7,"$2,271.17"
+Citywide Service and Repair,2012-06-30,3,$607.00
+Citywide Service and Repair,2012-06-30,1,"$1,308.94"
+Citywide Service and Repair,2012-06-30,1,"$1,308.94"
+Citywide Service and Repair,2012-06-30,3,"$1,409.38"
+Citywide Service and Repair,2012-06-30,8,$41.49
+Citywide Service and Repair,2012-06-30,2,$71.99
+General Bike Corporation,2012-06-30,2,$939.59
+General Bike Corporation,2012-06-30,1,$469.79
+General Bike Corporation,2012-06-30,2,$939.59
+General Bike Corporation,2012-06-30,1,$469.79
+Steel Inc.,2012-06-30,2,$23.99
+Steel Inc.,2012-06-30,5,$75.00
+Steel Inc.,2012-06-30,5,$144.20
+Steel Inc.,2012-06-30,4,$56.52
+Steel Inc.,2012-06-30,3,$60.56
+Steel Inc.,2012-06-30,8,$161.49
+Steel Inc.,2012-06-30,6,$323.96
+Steel Inc.,2012-06-30,2,$107.99
+Steel Inc.,2012-06-30,5,$224.97
+Steel Inc.,2012-06-30,5,$144.20
+Steel Inc.,2012-06-30,4,"$1,879.18"
+Steel Inc.,2012-06-30,5,$100.93
+Steel Inc.,2012-06-30,4,$143.98
+Steel Inc.,2012-06-30,2,$939.59
+Steel Inc.,2012-06-30,1,$28.84
+Steel Inc.,2012-06-30,7,$251.96
+Steel Inc.,2012-06-30,3,$134.98
+"Health Spa, Limited",2012-06-30,3,"$1,800.79"
+"Health Spa, Limited",2012-06-30,3,$594.11
+"Health Spa, Limited",2012-06-30,5,"$2,348.97"
+"Health Spa, Limited",2012-06-30,10,"$4,697.94"
+"Health Spa, Limited",2012-06-30,6,"$1,103.63"
+"Health Spa, Limited",2012-06-30,3,"$1,409.38"
+"Health Spa, Limited",2012-06-30,2,$939.59
+"Health Spa, Limited",2012-06-30,3,$607.00
+"Health Spa, Limited",2012-06-30,1,$324.45
+"Health Spa, Limited",2012-06-30,5,$179.97
+"Health Spa, Limited",2012-06-30,1,$53.99
+"Health Spa, Limited",2012-06-30,5,"$1,622.26"
+"Health Spa, Limited",2012-06-30,2,"$2,932.02"
+"Health Spa, Limited",2012-06-30,1,$20.19
+"Health Spa, Limited",2012-06-30,7,"$3,288.56"
+"Health Spa, Limited",2012-06-30,2,$367.88
+"Health Spa, Limited",2012-06-30,3,$607.00
+"Health Spa, Limited",2012-06-30,4,$809.33
+"Health Spa, Limited",2012-06-30,1,$14.13
+"Health Spa, Limited",2012-06-30,5,"$2,348.97"
+"Health Spa, Limited",2012-06-30,5,$337.70
+"Health Spa, Limited",2012-06-30,8,"$3,758.35"
+"Health Spa, Limited",2012-06-30,8,"$3,758.35"
+"Health Spa, Limited",2012-06-30,7,"$4,201.84"
+"Health Spa, Limited",2012-06-30,1,"$1,466.01"
+"Health Spa, Limited",2012-06-30,1,$324.45
+"Health Spa, Limited",2012-06-30,2,$939.59
+"Health Spa, Limited",2012-06-30,4,$809.33
+Associated Bikes,2012-06-30,1,"$1,242.85"
+Associated Bikes,2012-06-30,1,$33.77
+Associated Bikes,2012-06-30,3,$60.56
+Associated Bikes,2012-06-30,3,$161.98
+Rally Day Mall,2012-06-30,3,"$1,409.38"
+Rally Day Mall,2012-06-30,2,$28.26
+Rally Day Mall,2012-06-30,3,"$1,409.38"
+Rally Day Mall,2012-06-30,3,$86.52
+Rally Day Mall,2012-06-30,3,"$1,409.38"
+Rally Day Mall,2012-06-30,5,$269.97
+Rally Day Mall,2012-06-30,3,$35.98
+Rally Day Mall,2012-06-30,1,$202.33
+Rally Day Mall,2012-06-30,1,$600.26
+Rally Day Mall,2012-06-30,3,$973.36
+Rally Day Mall,2012-06-30,1,"$1,466.01"
+Rally Day Mall,2012-06-30,5,"$2,348.97"
+Rally Day Mall,2012-06-30,4,"$1,879.18"
+Rally Day Mall,2012-06-30,1,$324.45
+Rally Day Mall,2012-06-30,1,$324.45
+Rally Day Mall,2012-06-30,2,$939.59
+Rally Day Mall,2012-06-30,3,$60.56
+Rally Day Mall,2012-06-30,2,$40.37
+Rally Day Mall,2012-06-30,1,$44.99
+Rally Day Mall,2012-06-30,3,$86.52
+Rally Day Mall,2012-06-30,5,"$6,544.69"
+Rally Day Mall,2012-06-30,3,$45.00
+Rally Day Mall,2012-06-30,5,$179.97
+Rally Day Mall,2012-06-30,1,$600.26
+Rally Day Mall,2012-06-30,3,"$3,926.81"
+Rally Day Mall,2012-06-30,3,$86.52
+Rally Day Mall,2012-06-30,2,$28.26
+Rally Day Mall,2012-06-30,2,$939.59
+Rally Day Mall,2012-06-30,5,$224.97
+Rally Day Mall,2012-06-30,4,"$1,879.18"
+Rally Day Mall,2012-06-30,2,$107.99
+Rally Day Mall,2012-06-30,3,$161.98
+Rally Day Mall,2012-06-30,5,"$2,348.97"
+Rally Day Mall,2012-06-30,4,"$2,401.05"
+Rally Day Mall,2012-06-30,4,$143.98
+Rally Day Mall,2012-06-30,5,$100.93
+Rally Day Mall,2012-06-30,1,$183.94
+Rally Day Mall,2012-06-30,1,$67.54
+Rally Day Mall,2012-06-30,6,$31.12
+Rally Day Mall,2012-06-30,2,"$2,932.02"
+Professional Cycle Store,2012-06-30,4,"$2,591.98"
+Professional Cycle Store,2012-06-30,1,$209.26
+Professional Cycle Store,2012-06-30,24,$476.39
+Professional Cycle Store,2012-06-30,2,"$2,485.70"
+Professional Cycle Store,2012-06-30,2,"$2,485.70"
+Professional Cycle Store,2012-06-30,2,$283.23
+Professional Cycle Store,2012-06-30,1,$647.99
+Professional Cycle Store,2012-06-30,4,"$4,917.84"
+Professional Cycle Store,2012-06-30,5,"$3,239.97"
+Professional Cycle Store,2012-06-30,1,$33.77
+Professional Cycle Store,2012-06-30,1,"$1,229.46"
+Professional Cycle Store,2012-06-30,3,"$1,943.98"
+Professional Cycle Store,2012-06-30,5,"$6,147.29"
+Red Bicycle Company,2012-06-30,1,"$1,229.46"
+Red Bicycle Company,2012-06-30,4,"$4,971.41"
+Red Bicycle Company,2012-06-30,3,"$1,943.98"
+Red Bicycle Company,2012-06-30,4,"$4,917.84"
+Red Bicycle Company,2012-06-30,3,"$3,688.38"
+Red Bicycle Company,2012-06-30,4,"$2,591.98"
+Red Bicycle Company,2012-06-30,1,$196.33
+Red Bicycle Company,2012-06-30,5,"$3,239.97"
+Red Bicycle Company,2012-06-30,2,$418.51
+Red Bicycle Company,2012-06-30,5,"$6,214.26"
+Red Bicycle Company,2012-06-30,10,$227.94
+Red Bicycle Company,2012-06-30,2,"$2,485.70"
+Red Bicycle Company,2012-06-30,1,$33.77
+Bike Dealers Association,2012-06-30,2,"$1,200.53"
+Bike Dealers Association,2012-06-30,3,$161.98
+Bike Dealers Association,2012-06-30,7,$201.88
+Bike Dealers Association,2012-06-30,3,"$1,409.38"
+Bike Dealers Association,2012-06-30,5,$144.20
+Bike Dealers Association,2012-06-30,4,"$1,879.18"
+Bike Dealers Association,2012-06-30,2,$939.59
+Bike Dealers Association,2012-06-30,2,$939.59
+Bike Dealers Association,2012-06-30,3,$35.98
+Bike Dealers Association,2012-06-30,7,"$3,288.56"
+Bike Dealers Association,2012-06-30,2,$40.37
+Bike Dealers Association,2012-06-30,1,$67.54
+Bike Dealers Association,2012-06-30,1,$600.26
+Bike Dealers Association,2012-06-30,4,$115.36
+Bike Dealers Association,2012-06-30,2,$939.59
+Bike Dealers Association,2012-06-30,3,$134.98
+Bike Dealers Association,2012-06-30,3,$42.39
+Bike Dealers Association,2012-06-30,2,$648.91
+Bike Dealers Association,2012-06-30,1,"$1,308.94"
+Bike Dealers Association,2012-06-30,4,$80.75
+Bike Dealers Association,2012-06-30,2,$939.59
+Bike Dealers Association,2012-06-30,3,$973.36
+Bike Dealers Association,2012-06-30,7,$105.00
+Bike Dealers Association,2012-06-30,5,"$2,348.97"
+Bike Dealers Association,2012-06-30,1,"$1,308.94"
+Bike Dealers Association,2012-06-30,2,$939.59
+Bike Dealers Association,2012-06-30,4,$179.98
+Bike Dealers Association,2012-06-30,3,$161.98
+Bike Dealers Association,2012-06-30,3,$551.81
+Bike Dealers Association,2012-06-30,3,$107.98
+Bike Dealers Association,2012-06-30,5,$179.97
+Bike Dealers Association,2012-06-30,3,$15.56
+Bike Dealers Association,2012-06-30,1,$14.13
+Bike Dealers Association,2012-06-30,2,$107.99
+Bike Dealers Association,2012-06-30,3,"$1,800.79"
+Bike Dealers Association,2012-06-30,5,$100.93
+Casual Bicycle Store,2012-06-30,4,$837.02
+Casual Bicycle Store,2012-06-30,6,"$3,887.96"
+Casual Bicycle Store,2012-06-30,2,"$2,485.70"
+Casual Bicycle Store,2012-06-30,1,$20.19
+Casual Bicycle Store,2012-06-30,7,"$4,535.96"
+Casual Bicycle Store,2012-06-30,2,"$2,458.92"
+Casual Bicycle Store,2012-06-30,3,"$3,688.38"
+Casual Bicycle Store,2012-06-30,3,$588.99
+Casual Bicycle Store,2012-06-30,2,$107.99
+Casual Bicycle Store,2012-06-30,2,"$1,295.99"
+Casual Bicycle Store,2012-06-30,4,$115.36
+Casual Bicycle Store,2012-06-30,2,$418.51
+Casual Bicycle Store,2012-06-30,2,"$2,458.92"
+Casual Bicycle Store,2012-06-30,4,$566.46
+Casual Bicycle Store,2012-06-30,1,$44.99
+Casual Bicycle Store,2012-06-30,5,$224.97
+Casual Bicycle Store,2012-06-30,4,"$2,591.98"
+Casual Bicycle Store,2012-06-30,2,"$2,485.70"
+Casual Bicycle Store,2012-06-30,5,"$6,214.26"
+Casual Bicycle Store,2012-06-30,4,$20.75
+Casual Bicycle Store,2012-06-30,28,$478.67
+Casual Bicycle Store,2012-06-30,6,$136.76
+Casual Bicycle Store,2012-06-30,3,$101.32
+Prosperous Tours,2012-06-30,2,$107.99
+Prosperous Tours,2012-06-30,8,"$3,758.35"
+Prosperous Tours,2012-06-30,1,$202.33
+Prosperous Tours,2012-06-30,3,$607.00
+Prosperous Tours,2012-06-30,5,"$2,348.97"
+Prosperous Tours,2012-06-30,5,"$2,348.97"
+Prosperous Tours,2012-06-30,1,$183.94
+Prosperous Tours,2012-06-30,2,$367.88
+Prosperous Tours,2012-06-30,6,$173.04
+Prosperous Tours,2012-06-30,5,"$3,001.31"
+Prosperous Tours,2012-06-30,4,$20.75
+Prosperous Tours,2012-06-30,3,$60.56
+Prosperous Tours,2012-06-30,1,$324.45
+Prosperous Tours,2012-06-30,5,$70.64
+Prosperous Tours,2012-06-30,3,$42.39
+Prosperous Tours,2012-06-30,2,$939.59
+Prosperous Tours,2012-06-30,2,$939.59
+Prosperous Tours,2012-06-30,3,"$1,800.79"
+Prosperous Tours,2012-06-30,7,$83.96
+Prosperous Tours,2012-06-30,2,$939.59
+Prosperous Tours,2012-06-30,5,$144.20
+Prosperous Tours,2012-06-30,4,$179.98
+Prosperous Tours,2012-06-30,2,$107.99
+Prosperous Tours,2012-06-30,2,$648.91
+Prosperous Tours,2012-06-30,7,$314.96
+Prosperous Tours,2012-06-30,3,$60.56
+Prosperous Tours,2012-06-30,3,$107.98
+Prosperous Tours,2012-06-30,2,$107.99
+Prosperous Tours,2012-06-30,3,$607.00
+Prosperous Tours,2012-06-30,2,"$2,617.88"
+Prosperous Tours,2012-06-30,2,$40.37
+Prosperous Tours,2012-06-30,4,"$1,879.18"
+Prosperous Tours,2012-06-30,1,$469.79
+Prosperous Tours,2012-06-30,4,$115.36
+Prosperous Tours,2012-06-30,5,$75.00
+Prosperous Tours,2012-06-30,2,"$2,617.88"
+Prosperous Tours,2012-06-30,1,$600.26
+Prosperous Tours,2012-06-30,1,"$1,466.01"
+Prosperous Tours,2012-06-30,5,$179.97
+Number One Bike Co.,2012-06-30,1,$469.79
+Number One Bike Co.,2012-06-30,1,$469.79
+Number One Bike Co.,2012-06-30,1,$469.79
+Number One Bike Co.,2012-06-30,2,$939.59
+Number One Bike Co.,2012-06-30,2,$939.59
+Number One Bike Co.,2012-06-30,2,$939.59
+Friendly Bike Shop,2012-06-30,3,"$1,409.38"
+Friendly Bike Shop,2012-06-30,1,$469.79
+Friendly Bike Shop,2012-06-30,1,$469.79
+Friendly Bike Shop,2012-06-30,1,$469.79
+Friendly Bike Shop,2012-06-30,3,"$1,409.38"
+Full Sports Supply,2012-06-30,2,$45.59
+Full Sports Supply,2012-06-30,2,$45.59
+Full Sports Supply,2012-06-30,1,"$1,229.46"
+Full Sports Supply,2012-06-30,3,$68.38
+Full Sports Supply,2012-06-30,2,"$2,458.92"
+Separate Parts Corporation,2012-06-30,3,$15.56
+Separate Parts Corporation,2012-06-30,1,$469.79
+Separate Parts Corporation,2012-06-30,4,"$1,879.18"
+Separate Parts Corporation,2012-06-30,3,$60.56
+Separate Parts Corporation,2012-06-30,2,$939.59
+Separate Parts Corporation,2012-06-30,1,$469.79
+Separate Parts Corporation,2012-06-30,2,"$1,200.53"
+Separate Parts Corporation,2012-06-30,3,"$1,409.38"
+Separate Parts Corporation,2012-06-30,3,"$1,800.79"
+Separate Parts Corporation,2012-06-30,4,$179.98
+Separate Parts Corporation,2012-06-30,4,"$2,401.05"
+Separate Parts Corporation,2012-06-30,1,"$1,466.01"
+Separate Parts Corporation,2012-06-30,3,"$1,409.38"
+Separate Parts Corporation,2012-06-30,1,"$1,308.94"
+Separate Parts Corporation,2012-06-30,2,$939.59
+Separate Parts Corporation,2012-06-30,2,"$2,617.88"
+Separate Parts Corporation,2012-06-30,2,"$2,932.02"
+Separate Parts Corporation,2012-06-30,2,$40.37
+Separate Parts Corporation,2012-06-30,2,$939.59
+Separate Parts Corporation,2012-06-30,1,$44.99
+Separate Parts Corporation,2012-06-30,1,"$1,308.94"
+Separate Parts Corporation,2012-06-30,1,"$1,308.94"
+Separate Parts Corporation,2012-06-30,4,"$1,879.18"
+Separate Parts Corporation,2012-06-30,4,"$5,235.75"
+Separate Parts Corporation,2012-06-30,4,"$1,879.18"
+Separate Parts Corporation,2012-06-30,2,"$2,932.02"
+Separate Parts Corporation,2012-06-30,4,$270.16
+Separate Parts Corporation,2012-06-30,3,"$1,409.38"
+Separate Parts Corporation,2012-06-30,1,$600.26
+Separate Parts Corporation,2012-06-30,8,$230.72
+Grand Discount Store,2012-06-30,1,$647.99
+Grand Discount Store,2012-06-30,1,"$1,229.46"
+Grand Discount Store,2012-06-30,2,"$2,485.70"
+Grand Discount Store,2012-06-30,1,$744.27
+Grand Discount Store,2012-06-30,2,$45.59
+Grand Discount Store,2012-06-30,1,$647.99
+Grand Discount Store,2012-06-30,3,$109.34
+Grand Discount Store,2012-06-30,1,"$1,242.85"
+Grand Discount Store,2012-06-30,2,$275.39
+Grand Discount Store,2012-06-30,6,$136.76
+Grand Discount Store,2012-06-30,2,"$1,295.99"
+Grand Discount Store,2012-06-30,3,$184.12
+Grand Discount Store,2012-06-30,2,$418.51
+Grand Discount Store,2012-06-30,1,"$1,242.85"
+Grand Discount Store,2012-06-30,5,"$6,147.29"
+Grand Discount Store,2012-06-30,4,$837.02
+Grand Discount Store,2012-06-30,2,"$2,458.92"
+Grand Discount Store,2012-06-30,3,"$2,208.44"
+Grand Discount Store,2012-06-30,2,$283.23
+Grand Discount Store,2012-06-30,3,$588.99
+Grand Discount Store,2012-06-30,1,$33.77
+Activity Center,2012-06-30,3,"$1,409.38"
+Activity Center,2012-06-30,2,$939.59
+Activity Center,2012-06-30,2,$939.59
+Activity Center,2012-06-30,1,$469.79
+Top Sports Supply,2012-06-30,3,$627.77
+Top Sports Supply,2012-06-30,3,"$2,232.82"
+Top Sports Supply,2012-06-30,3,$161.98
+Top Sports Supply,2012-06-30,4,$145.79
+Top Sports Supply,2012-06-30,3,$588.99
+Top Sports Supply,2012-06-30,8,$95.95
+Top Sports Supply,2012-06-30,2,$283.23
+Top Sports Supply,2012-06-30,3,$68.38
+Top Sports Supply,2012-06-30,8,"$9,835.67"
+Top Sports Supply,2012-06-30,4,$215.98
+Top Sports Supply,2012-06-30,4,"$2,977.09"
+Top Sports Supply,2012-06-30,3,"$3,688.38"
+Top Sports Supply,2012-06-30,4,"$4,917.84"
+Top Sports Supply,2012-06-30,5,$100.93
+Top Sports Supply,2012-06-30,2,$149.68
+Top Sports Supply,2012-06-30,3,$101.32
+Top Sports Supply,2012-06-30,3,"$2,208.44"
+Top Sports Supply,2012-06-30,2,"$1,295.99"
+Top Sports Supply,2012-06-30,3,$86.52
+Top Sports Supply,2012-06-30,3,"$3,728.56"
+Top Sports Supply,2012-06-30,6,$269.96
+Top Sports Supply,2012-06-30,3,$42.39
+Top Sports Supply,2012-06-30,2,$71.99
+Top Sports Supply,2012-06-30,6,$136.76
+Top Sports Supply,2012-06-30,5,"$3,680.73"
+Top Sports Supply,2012-06-30,5,"$6,214.26"
+Top Sports Supply,2012-06-30,2,$71.99
+Top Sports Supply,2012-06-30,4,$837.02
+Top Sports Supply,2012-06-30,2,"$1,295.99"
+Top Sports Supply,2012-06-30,2,$275.39
+Top Sports Supply,2012-06-30,2,$57.68
+Top Sports Supply,2012-06-30,4,$20.75
+Top Sports Supply,2012-06-30,4,$97.18
+Top Sports Supply,2012-06-30,2,$122.75
+Top Sports Supply,2012-06-30,2,$40.37
+Top Sports Supply,2012-06-30,5,$144.20
+Top Sports Supply,2012-06-30,1,$647.99
+Top Sports Supply,2012-06-30,4,$179.98
+Top Sports Supply,2012-06-30,3,$60.56
+Top Sports Supply,2012-06-30,5,"$1,046.28"
+Top Sports Supply,2012-06-30,1,$647.99
+Top Sports Supply,2012-06-30,4,"$4,971.41"
+Bikes for Kids and Adults,2012-06-30,1,$22.79
+Bikes for Kids and Adults,2012-06-30,6,$136.76
+Bikes for Kids and Adults,2012-06-30,1,"$1,242.85"
+Bikes for Kids and Adults,2012-06-30,1,"$1,229.46"
+Fitness Toy Store,2012-06-30,4,$809.33
+Fitness Toy Store,2012-06-30,1,$600.26
+Fitness Toy Store,2012-06-30,6,"$2,818.76"
+Fitness Toy Store,2012-06-30,1,$183.94
+Fitness Toy Store,2012-06-30,5,"$1,011.66"
+Fitness Toy Store,2012-06-30,1,$35.99
+Fitness Toy Store,2012-06-30,10,"$4,697.94"
+Fitness Toy Store,2012-06-30,8,"$1,618.66"
+Fitness Toy Store,2012-06-30,1,"$1,308.94"
+Fitness Toy Store,2012-06-30,16,"$6,545.80"
+Fitness Toy Store,2012-06-30,3,$107.98
+Fitness Toy Store,2012-06-30,1,$324.45
+Fitness Toy Store,2012-06-30,7,"$3,288.56"
+Fitness Toy Store,2012-06-30,1,$324.45
+Fitness Toy Store,2012-06-30,2,$939.59
+Fitness Toy Store,2012-06-30,2,"$1,200.53"
+Fitness Toy Store,2012-06-30,7,"$1,416.32"
+Fitness Toy Store,2012-06-30,4,"$1,297.81"
+Fitness Toy Store,2012-06-30,1,$600.26
+Fitness Toy Store,2012-06-30,2,$28.26
+Fitness Toy Store,2012-06-30,6,"$2,818.76"
+Fitness Toy Store,2012-06-30,3,$551.81
+Fitness Toy Store,2012-06-30,3,"$1,409.38"
+Fitness Toy Store,2012-06-30,4,$215.98
+Fitness Toy Store,2012-06-30,8,"$3,758.35"
+Fitness Toy Store,2012-06-30,2,$135.08
+Fitness Toy Store,2012-06-30,5,"$2,348.97"
+Fitness Toy Store,2012-06-30,2,"$2,932.02"
+Fitness Toy Store,2012-06-30,2,"$2,932.02"
+Curbside Universe,2012-06-30,1,$35.99
+Curbside Universe,2012-06-30,2,$367.88
+Fifth Bike Store,2012-06-30,1,$469.79
+Weekend Tours,2012-06-30,1,"$1,308.94"
+Specialty Sports Store,2012-06-30,1,$35.99
+Specialty Sports Store,2012-06-30,3,$161.98
+Small Cycle Store,2012-06-30,1,$469.79
+Small Cycle Store,2012-06-30,1,$469.79
+Small Cycle Store,2012-06-30,1,$469.79
+Small Cycle Store,2012-06-30,3,"$1,409.38"
+Small Cycle Store,2012-06-30,3,"$1,409.38"
+Exhilarating Cycles,2012-06-30,2,$939.59
+Exhilarating Cycles,2012-06-30,2,$107.99
+Exhilarating Cycles,2012-06-30,1,$324.45
+Exhilarating Cycles,2012-06-30,2,$939.59
+Exhilarating Cycles,2012-06-30,1,"$1,308.94"
+Exhilarating Cycles,2012-06-30,1,$600.26
+Exhilarating Cycles,2012-06-30,1,"$1,466.01"
+Exhilarating Cycles,2012-06-30,1,$202.33
+Exhilarating Cycles,2012-06-30,4,$115.36
+Exhilarating Cycles,2012-06-30,3,$973.36
+Exhilarating Cycles,2012-06-30,1,$35.99
+Exhilarating Cycles,2012-06-30,1,$35.99
+Exhilarating Cycles,2012-06-30,3,$86.52
+Exhilarating Cycles,2012-06-30,2,$28.26
+Exhilarating Cycles,2012-06-30,2,$107.99
+Exhilarating Cycles,2012-06-30,1,$202.33
+Exhilarating Cycles,2012-06-30,1,$600.26
+Exhilarating Cycles,2012-06-30,3,$607.00
+Exhilarating Cycles,2012-06-30,3,$607.00
+Exhilarating Cycles,2012-06-30,2,$30.00
+Exhilarating Cycles,2012-06-30,7,$314.96
+Exhilarating Cycles,2012-06-30,5,"$2,348.97"
+Exhilarating Cycles,2012-06-30,2,$939.59
+Exhilarating Cycles,2012-06-30,3,"$1,409.38"
+Exhilarating Cycles,2012-06-30,4,"$1,297.81"
+Exhilarating Cycles,2012-06-30,1,$198.04
+Exhilarating Cycles,2012-06-30,3,"$1,409.38"
+Exhilarating Cycles,2012-06-30,1,$600.26
+Exhilarating Cycles,2012-06-30,1,$67.54
+Exhilarating Cycles,2012-06-30,4,$80.75
+Exhilarating Cycles,2012-06-30,4,$143.98
+Exhilarating Cycles,2012-06-30,2,$939.59
+Exhilarating Cycles,2012-06-30,3,$35.98
+Exhilarating Cycles,2012-06-30,2,$367.88
+Exhilarating Cycles,2012-06-30,5,$25.93
+Exhilarating Cycles,2012-06-30,2,$107.99
+Exhilarating Cycles,2012-06-30,2,$89.99
+Exhilarating Cycles,2012-06-30,5,$70.64
+Exhilarating Cycles,2012-06-30,3,$60.56
+Exhilarating Cycles,2012-06-30,2,$939.59
+Exhilarating Cycles,2012-06-30,4,$115.36
+Exhilarating Cycles,2012-06-30,4,"$1,879.18"
+Exhilarating Cycles,2012-06-30,4,$80.75
+Grease and Oil Products Company,2012-06-30,3,"$1,409.38"
+Grease and Oil Products Company,2012-06-30,1,$469.79
+Grease and Oil Products Company,2012-06-30,1,$469.79
+Grease and Oil Products Company,2012-06-30,1,$469.79
+Grease and Oil Products Company,2012-06-30,3,"$1,409.38"
+Eastside Sporting Goods,2012-06-30,2,$10.37
+Eastside Sporting Goods,2012-06-30,6,"$2,818.76"
+Eastside Sporting Goods,2012-06-30,8,"$10,471.50"
+Eastside Sporting Goods,2012-06-30,3,$134.98
+Eastside Sporting Goods,2012-06-30,2,$939.59
+Eastside Sporting Goods,2012-06-30,2,$939.59
+Eastside Sporting Goods,2012-06-30,3,"$1,800.79"
+Eastside Sporting Goods,2012-06-30,1,$469.79
+Eastside Sporting Goods,2012-06-30,8,"$11,728.08"
+Eastside Sporting Goods,2012-06-30,1,$28.84
+Eastside Sporting Goods,2012-06-30,4,"$1,879.18"
+Eastside Sporting Goods,2012-06-30,5,"$2,348.97"
+Eastside Sporting Goods,2012-06-30,5,"$2,348.97"
+Eastside Sporting Goods,2012-06-30,4,"$2,401.05"
+Eastside Sporting Goods,2012-06-30,2,"$2,932.02"
+Eastside Sporting Goods,2012-06-30,7,"$10,262.07"
+Eastside Sporting Goods,2012-06-30,2,"$2,617.88"
+Eastside Sporting Goods,2012-06-30,6,"$2,818.76"
+Eastside Sporting Goods,2012-06-30,3,$202.62
+Eastside Sporting Goods,2012-06-30,2,$40.37
+Eastside Sporting Goods,2012-06-30,5,"$2,348.97"
+Eastside Sporting Goods,2012-06-30,3,"$1,409.38"
+Eastside Sporting Goods,2012-06-30,8,"$3,758.35"
+Eastside Sporting Goods,2012-06-30,2,"$1,200.53"
+Eastside Sporting Goods,2012-06-30,3,"$1,409.38"
+Eastside Sporting Goods,2012-06-30,3,"$3,926.81"
+Eastside Sporting Goods,2012-06-30,7,"$4,201.84"
+Eastside Sporting Goods,2012-06-30,5,"$6,544.69"
+Eastside Sporting Goods,2012-06-30,3,$134.98
+Eastside Sporting Goods,2012-06-30,1,"$1,308.94"
+Eastside Sporting Goods,2012-06-30,4,"$2,401.05"
+Eastside Sporting Goods,2012-06-30,4,$80.75
+Official Parts Shop,2012-06-30,1,$469.79
+Official Parts Shop,2012-06-30,6,"$2,818.76"
+Official Parts Shop,2012-06-30,6,"$2,818.76"
+Official Parts Shop,2012-06-30,2,$939.59
+Official Parts Shop,2012-06-30,4,"$1,879.18"
+Official Parts Shop,2012-06-30,2,$939.59
+Extended Tours,2012-06-30,2,$939.59
+Extended Tours,2012-06-30,1,$20.19
+Extended Tours,2012-06-30,2,$939.59
+Futuristic Sport Distributors,2012-06-30,1,$469.79
+Futuristic Sport Distributors,2012-06-30,3,$60.56
+Futuristic Sport Distributors,2012-06-30,5,$59.97
+Futuristic Sport Distributors,2012-06-30,3,$161.98
+Futuristic Sport Distributors,2012-06-30,5,"$2,348.97"
+Futuristic Sport Distributors,2012-06-30,5,"$2,348.97"
+Futuristic Sport Distributors,2012-06-30,1,$202.33
+Futuristic Sport Distributors,2012-06-30,1,$600.26
+Futuristic Sport Distributors,2012-06-30,4,"$2,401.05"
+Futuristic Sport Distributors,2012-06-30,6,$215.96
+Futuristic Sport Distributors,2012-06-30,3,$607.00
+Futuristic Sport Distributors,2012-06-30,2,"$2,932.02"
+Futuristic Sport Distributors,2012-06-30,3,$60.56
+Futuristic Sport Distributors,2012-06-30,4,$20.75
+Futuristic Sport Distributors,2012-06-30,7,$141.31
+Futuristic Sport Distributors,2012-06-30,3,$42.39
+Futuristic Sport Distributors,2012-06-30,3,$134.98
+Futuristic Sport Distributors,2012-06-30,2,$939.59
+Futuristic Sport Distributors,2012-06-30,1,$469.79
+Futuristic Sport Distributors,2012-06-30,2,$30.00
+Futuristic Sport Distributors,2012-06-30,4,"$1,879.18"
+Futuristic Sport Distributors,2012-06-30,5,"$2,348.97"
+Futuristic Sport Distributors,2012-06-30,4,"$2,401.05"
+Futuristic Sport Distributors,2012-06-30,4,$115.36
+Futuristic Sport Distributors,2012-06-30,3,$86.52
+Futuristic Sport Distributors,2012-06-30,5,"$2,348.97"
+Futuristic Sport Distributors,2012-06-30,7,$314.96
+Futuristic Sport Distributors,2012-06-30,1,$324.45
+Futuristic Sport Distributors,2012-06-30,2,$107.99
+Futuristic Sport Distributors,2012-06-30,1,"$1,466.01"
+Futuristic Sport Distributors,2012-06-30,6,$173.04
+Futuristic Sport Distributors,2012-06-30,2,$939.59
+Futuristic Sport Distributors,2012-06-30,1,"$1,308.94"
+Spoke Manufacturers,2012-06-30,1,$469.79
+Worthwhile Activity Store,2012-06-30,1,$209.26
+Retail Toy Store,2012-06-30,1,$469.79

@@ -1,0 +1,58 @@
+{
+  "script_name": "ADV_R001_SALES_DAILY.sas",
+  "description": "Extracts daily sales data and generates a summary report.",
+  "steps": [
+    {
+      "step_number": 1,
+      "step_type": "PROC SQL",
+      "description": "Extract sales data for the reporting date and join with customer and product details.",
+      "input_sources": ["sas_dw.FactInternetSales", "sas_dw.DimCustomer", "sas_dw.DimProduct", "sas_dw.DimDate"],
+      "key_variables": ["SalesAmount", "OrderQuantity", "OrderDateKey", "CustomerKey", "ProductKey"],
+      "operations": ["Filter sales data for report_date", "Join customer and product details"],
+      "output": "WORK.sales_report",
+      "sas_code": "PROC SQL;\nCREATE TABLE WORK.sales_report AS\nSELECT f.SalesAmount, f.OrderQuantity, f.OrderDateKey, c.CustomerKey, p.ProductKey\nFROM sas_dw.FactInternetSales f\nJOIN sas_dw.DimCustomer c ON f.CustomerKey = c.CustomerKey\nJOIN sas_dw.DimProduct p ON f.ProductKey = p.ProductKey\nJOIN sas_dw.DimDate d ON f.OrderDateKey = d.DateKey\nWHERE d.FullDateAlternateKey = '&report_date';\nQUIT;"
+    },
+    {
+      "step_number": 2,
+      "step_type": "PROC MEANS",
+      "description": "Generate summary statistics for sales data.",
+      "input_sources": ["WORK.sales_report"],
+      "key_variables": ["OrderQuantity", "SalesAmount"],
+      "operations": [
+        "Calculate MEAN of OrderQuantity and SalesAmount",
+        "Calculate SUM of OrderQuantity and SalesAmount",
+        "Limit decimals to 2 places"
+      ],
+      "output": "WORK.sales_report_summary",
+      "sas_code": "PROC MEANS DATA=WORK.sales_report MEAN SUM MAXDEC=2;\nVAR OrderQuantity SalesAmount;\nOUTPUT OUT=WORK.sales_report_summary;\nRUN;"
+    },
+    {
+      "step_number": 3,
+      "step_type": "PROC FREQ",
+      "description": "Generate frequency distribution of new customers by country.",
+      "input_sources": ["WORK.new_customers_report"],
+      "key_variables": ["Country"],
+      "operations": ["Calculate frequency count for Country variable"],
+      "output": "WORK.customer_country_freq",
+      "sas_code": "PROC FREQ DATA=WORK.new_customers_report;\nTABLES Country / OUT=WORK.customer_country_freq;\nRUN;"
+    },
+    {
+      "step_number": 4,
+      "step_type": "PROC EXPORT",
+      "description": "Export the detailed sales report to CSV format.",
+      "input_sources": ["WORK.sales_report"],
+      "output": "sales_report.csv",
+      "export_format": "CSV",
+      "sas_code": "PROC EXPORT DATA=WORK.sales_report\nOUTFILE='sales_report.csv'\nDBMS=CSV REPLACE;\nRUN;"
+    },
+    {
+      "step_number": 5,
+      "step_type": "PROC EXPORT",
+      "description": "Export the sales summary report to CSV format.",
+      "input_sources": ["WORK.sales_report_summary"],
+      "output": "sales_report_summary.csv",
+      "export_format": "CSV",
+      "sas_code": "PROC EXPORT DATA=WORK.sales_report_summary\nOUTFILE='sales_report_summary.csv'\nDBMS=CSV REPLACE;\nRUN;"
+    }
+  ]
+}

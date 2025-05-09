@@ -1,0 +1,47 @@
+{
+  "script_name": "ADV_R007_NEW_CUSTOMER_WEEKLY.sas",
+  "description": "Aggregates and summarizes new customer registrations for the past 7 days.",
+  "steps": [
+    {
+      "step_number": 1,
+      "step_type": "PROC SQL",
+      "description": "Extracts new customer registrations for the past 7 days.",
+      "input_sources": ["sas_dw.DimCustomer", "sas_dw.DimDate"],
+      "key_variables": ["CustomerKey", "FirstName", "LastName", "EmailAddress", "Phone", "Country", "SignUpDate"],
+      "operations": [
+        "Filter customers where SignUpDate is between report_date and report_date - 6",
+        "Join with date dimension for proper date alignment"
+      ],
+      "output": "WORK.new_customers_weekly",
+      "sas_code": "PROC SQL;\nCREATE TABLE WORK.new_customers_weekly AS\nSELECT c.CustomerKey, c.FirstName, c.LastName, c.EmailAddress, c.Phone, c.Country, d.FullDateAlternateKey AS SignUpDate\nFROM sas_dw.DimCustomer c\nJOIN sas_dw.DimDate d ON c.SignUpDateKey = d.DateKey\nWHERE d.FullDateAlternateKey BETWEEN '&report_date' - 6 AND '&report_date';\nQUIT;"
+    },
+    {
+      "step_number": 2,
+      "step_type": "PROC FREQ",
+      "description": "Generates frequency distribution of new customer sign-ups per country.",
+      "input_sources": ["WORK.new_customers_weekly"],
+      "key_variables": ["Country"],
+      "operations": ["Generate frequency table for Country variable"],
+      "output": "WORK.new_customers_weekly_summary",
+      "sas_code": "PROC FREQ DATA=WORK.new_customers_weekly;\nTABLES Country / OUT=WORK.new_customers_weekly_summary;\nRUN;"
+    },
+    {
+      "step_number": 3,
+      "step_type": "PROC EXPORT",
+      "description": "Export detailed new customer registrations to CSV.",
+      "input_sources": ["WORK.new_customers_weekly"],
+      "output": "new_customers_weekly_report.csv",
+      "export_format": "CSV",
+      "sas_code": "PROC EXPORT DATA=WORK.new_customers_weekly\nOUTFILE='new_customers_weekly_report.csv'\nDBMS=CSV REPLACE;\nRUN;"
+    },
+    {
+      "step_number": 4,
+      "step_type": "PROC EXPORT",
+      "description": "Export summary customer sign-up frequency report to CSV.",
+      "input_sources": ["WORK.new_customers_weekly_summary"],
+      "output": "new_customers_weekly_summary.csv",
+      "export_format": "CSV",
+      "sas_code": "PROC EXPORT DATA=WORK.new_customers_weekly_summary\nOUTFILE='new_customers_weekly_summary.csv'\nDBMS=CSV REPLACE;\nRUN;"
+    }
+  ]
+}

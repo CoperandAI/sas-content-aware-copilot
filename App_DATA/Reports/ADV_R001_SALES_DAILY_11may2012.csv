@@ -1,0 +1,7 @@
+SalesOrderNumber,OrderDate,CustomerName,ProductName,OrderQuantity,SalesAmount
+SO48159,2012-05-11,Gerald                                             Romero,"Road-550-W Yellow, 48",1,"$1,000.44"
+SO48160,2012-05-11,George                                             Louverdis,"Road-250 Red, 58",1,"$2,181.56"
+SO48161,2012-05-11,Abigail                                            Williams,"Road-250 Red, 58",1,"$2,181.56"
+SO48162,2012-05-11,Amanda                                             Ward,"Road-250 Red, 48",1,"$2,443.35"
+SO48163,2012-05-11,Ebony                                              Mehta,"Road-250 Black, 48",1,"$2,181.56"
+SO48164,2012-05-11,Alisha                                             Shen,"Road-650 Red, 48",1,$782.99

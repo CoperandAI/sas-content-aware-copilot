@@ -1,0 +1,5 @@
+SalesOrderNumber,OrderDate,CustomerName,ProductName,OrderQuantity,SalesAmount
+SO48165,2012-05-12,Darren                                             Diaz,"Road-250 Black, 44",1,"$2,181.56"
+SO48166,2012-05-12,Marcus                                             Martinez,"Road-250 Red, 44",1,"$2,443.35"
+SO48167,2012-05-12,Faith                                              Hayes,"Mountain-200 Black, 46",1,"$2,049.10"
+SO48168,2012-05-12,Mitchell                                           Shen,"Road-250 Black, 44",1,"$2,181.56"

@@ -1,0 +1,27 @@
+{
+  "report_name": "ADV_REPORT_WEEKLY_BATCH",
+  "description": "Weekly batch process to consolidate and validate reports for the past 7 days.",
+  "execution_date": "%SYSFUNC(TODAY(), YYMMDD10.)",
+  "input_reports": [
+    "ADV_R006_SALES_WEEKLY",
+    "ADV_R007_NEW_CUSTOMER_WEEKLY"
+  ],
+  "execution_steps": [
+    {
+      "step": 1,
+      "description": "Set up macro variables for weekly reporting period",
+      "code_snippet": "%LET report_date = %SYSFUNC(PUTN("&run_date"d, YYMMDD10.));",
+      "code_snippet": "%SYSFUNC(PUTN(%SYSFUNC(INTNX(day, "&run_date"d, -6)), YYMMDD10.));"
+    },
+    {
+      "step": 2,
+      "description": "Run Weekly Sales Report",
+      "sas_program": "ADV_R006_SALES_WEEKLY.sas"
+    },
+    {
+      "step": 3,
+      "description": "Run Weekly New Customer Report",
+      "sas_program": "ADV_R007_NEW_CUSTOMER_WEEKLY.sas"
+    }
+  ]
+}

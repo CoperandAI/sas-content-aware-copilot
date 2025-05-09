@@ -1,0 +1,6 @@
+SalesOrderNumber,OrderDate,CustomerName,ProductName,OrderQuantity,SalesAmount
+SO48169,2012-05-13,Tony                                               Chander,"Road-250 Black, 52",1,"$2,181.56"
+SO48170,2012-05-13,Meredith                                           Prasad,"Mountain-200 Silver, 42",1,"$2,071.42"
+SO48171,2012-05-13,Hailey                                             Russell,"Road-250 Red, 52",1,"$2,443.35"
+SO48172,2012-05-13,Wyatt                                              Bennett,"Road-250 Red, 48",1,"$2,443.35"
+SO48173,2012-05-13,Victoria                                           Davis,"Road-250 Black, 48",1,"$2,181.56"

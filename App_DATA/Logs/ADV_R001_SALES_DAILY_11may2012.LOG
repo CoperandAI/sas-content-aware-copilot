@@ -1,0 +1,187 @@
+NOTE: PROCEDURE PRINTTO used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.03 seconds
+      
+
+REPORT_DATE=2012-05-11
+NOTE: Table WORK.SALES_REPORT created, with 6 rows and 6 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.57 seconds
+      cpu time            0.57 seconds
+      
+
+
+NOTE: There were 6 observations read from the data set WORK.SALES_REPORT.
+NOTE: The data set WORK.SALES_REPORT_SUMMARY has 1 observations and 4 variables.
+NOTE: PROCEDURE MEANS used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+      
+2                                     The SAS System              15:32 Monday, May 7, 2012
+
+
+
+72          /**********************************************************************
+73          *   PRODUCT:   SAS
+74          *   VERSION:   9.3
+75          *   CREATOR:   External File Interface
+76          *   DATE:      07MAY12
+77          *   DESC:      Generated SAS Datastep Code
+78          *   TEMPLATE SOURCE:  (None Specified.)
+79          ***********************************************************************/
+80             data _null_;
+81             %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+82             %let _EFIREC_ = 0;     /* clear export record count macro variable */
+83             file 'Z:\Shared with
+83       ! VM\Log_Analytics\reports\ADV_R001_SALES_DAILY_11may2012.csv' delimiter=',' DSD
+83       ! DROPOVER lrecl=32767;
+84             if _n_ = 1 then        /* write column names or labels */
+85              do;
+86                put
+87                   "SalesOrderNumber"
+88                ','
+89                   "OrderDate"
+90                ','
+91                   "CustomerName"
+92                ','
+93                   "ProductName"
+94                ','
+95                   "OrderQuantity"
+96                ','
+97                   "SalesAmount"
+98                ;
+99              end;
+100           set  WORK.SALES_REPORT   end=EFIEOD;
+101               format SalesOrderNumber $20. ;
+102               format OrderDate $10. ;
+103               format CustomerName $101. ;
+104               format ProductName $50. ;
+105               format OrderQuantity 6. ;
+106               format SalesAmount dollar27.2 ;
+107             do;
+108               EFIOUT + 1;
+109               put SalesOrderNumber $ @;
+110               put OrderDate $ @;
+111               put CustomerName $ @;
+112               put ProductName $ @;
+113               put OrderQuantity @;
+114               put SalesAmount ;
+115               ;
+116             end;
+117            if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro
+117      ! variable */
+3                                     The SAS System              15:32 Monday, May 7, 2012
+
+118            if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+119            run;
+
+NOTE: The file 'Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R001_SALES_DAILY_11may2012.csv' is:
+      Filename=Z:\Shared with VM\Log_Analytics\reports\ADV_R001_SALES_DAILY_11may2012.csv,
+      RECFM=V,LRECL=32767,File Size (bytes)=0,
+      Last Modified=04Mar2025:18:51:12,
+      Create Time=04Mar2025:18:51:12
+
+NOTE: 7 records were written to the file 'Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R001_SALES_DAILY_11may2012.csv'.
+      The minimum record length was 77.
+      The maximum record length was 114.
+NOTE: There were 6 observations read from the data set WORK.SALES_REPORT.
+NOTE: DATA statement used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.03 seconds
+      
+
+6 records created in Z:\Shared with 
+VM\Log_Analytics\reports\ADV_R001_SALES_DAILY_11may2012.csv from WORK.SALES_REPORT.
+  
+  
+NOTE: "Z:\Shared with VM\Log_Analytics\reports\ADV_R001_SALES_DAILY_11may2012.csv" file 
+      was successfully created.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.06 seconds
+      
+
+
+126         /**********************************************************************
+127         *   PRODUCT:   SAS
+128         *   VERSION:   9.3
+129         *   CREATOR:   External File Interface
+130         *   DATE:      07MAY12
+131         *   DESC:      Generated SAS Datastep Code
+132         *   TEMPLATE SOURCE:  (None Specified.)
+133         ***********************************************************************/
+134            data _null_;
+135            %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+136            %let _EFIREC_ = 0;     /* clear export record count macro variable */
+137            file 'Z:\Shared with
+137      ! VM\Log_Analytics\reports\ADV_R001_SALES_DAILY_SUMMARY_11may2012.csv'
+137      ! delimiter=',' DSD DROPOVER lrecl=32767;
+138            if _n_ = 1 then        /* write column names or labels */
+139             do;
+140               put
+141                  "OrderQuantity_Mean"
+142               ','
+4                                     The SAS System              15:32 Monday, May 7, 2012
+
+143                  "SalesAmount_Mean"
+144               ','
+145                  "OrderQuantity_Sum"
+146               ','
+147                  "SalesAmount_Sum"
+148               ;
+149             end;
+150           set  WORK.SALES_REPORT_SUMMARY   end=EFIEOD;
+151               format OrderQuantity_Mean 6. ;
+152               format SalesAmount_Mean dollar27.2 ;
+153               format OrderQuantity_Sum 6. ;
+154               format SalesAmount_Sum dollar27.2 ;
+155             do;
+156               EFIOUT + 1;
+157               put OrderQuantity_Mean @;
+158               put SalesAmount_Mean @;
+159               put OrderQuantity_Sum @;
+160               put SalesAmount_Sum ;
+161               ;
+162             end;
+163            if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro
+163      ! variable */
+164            if EFIEOD then call symputx('_EFIREC_',EFIOUT);
+165            run;
+
+NOTE: The file 'Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R001_SALES_DAILY_SUMMARY_11may2012.csv' is:
+      
+      Filename=Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R001_SALES_DAILY_SUMMARY_11may2012.csv,
+      RECFM=V,LRECL=32767,File Size (bytes)=0,
+      Last Modified=04Mar2025:18:51:12,
+      Create Time=04Mar2025:18:51:12
+
+NOTE: 2 records were written to the file 'Z:\Shared with 
+      VM\Log_Analytics\reports\ADV_R001_SALES_DAILY_SUMMARY_11may2012.csv'.
+      The minimum record length was 28.
+      The maximum record length was 69.
+NOTE: There were 1 observations read from the data set WORK.SALES_REPORT_SUMMARY.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+1 records created in Z:\Shared with 
+VM\Log_Analytics\reports\ADV_R001_SALES_DAILY_SUMMARY_11may2012.csv from 
+WORK.SALES_REPORT_SUMMARY.
+  
+  
+NOTE: "Z:\Shared with VM\Log_Analytics\reports\ADV_R001_SALES_DAILY_SUMMARY_11may2012.csv" 
+      file was successfully created.
+5                                     The SAS System              15:32 Monday, May 7, 2012
+
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.06 seconds
+      
+
+

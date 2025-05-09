@@ -1,0 +1,1555 @@
+{
+    "library_name": "sas_dw",
+    "database": "AdventureWorksDW2022",
+    "tables": {
+        "ADVENTUREWORKSDWBUILDVERSION": {
+            "table_name": "ADVENTUREWORKSDWBUILDVERSION",
+            "columns": {
+                "DBVersion": {
+                    "type": "char",
+                    "length": 50
+                },
+                "VersionDate": {
+                    "type": "num",
+                    "length": 8
+                }
+            }
+        },
+        "DATABASELOG": {
+            "table_name": "DATABASELOG",
+            "columns": {
+                "DatabaseLogID": {
+                    "type": "num",
+                    "length": 8
+                },
+                "PostTime": {
+                    "type": "num",
+                    "length": 8
+                },
+                "DatabaseUser": {
+                    "type": "char",
+                    "length": 128
+                },
+                "Event": {
+                    "type": "char",
+                    "length": 128
+                },
+                "Schema": {
+                    "type": "char",
+                    "length": 128
+                },
+                "Object": {
+                    "type": "char",
+                    "length": 128
+                },
+                "TSQL": {
+                    "type": "char",
+                    "length": 1024
+                },
+                "XmlEvent": {
+                    "type": "char",
+                    "length": 1024
+                }
+            }
+        },
+        "DIMACCOUNT": {
+            "table_name": "DIMACCOUNT",
+            "columns": {
+                "AccountKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ParentAccountKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "AccountCodeAlternateKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ParentAccountCodeAlternateKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "AccountDescription": {
+                    "type": "char",
+                    "length": 50
+                },
+                "AccountType": {
+                    "type": "char",
+                    "length": 50
+                },
+                "Operator": {
+                    "type": "char",
+                    "length": 50
+                },
+                "CustomMembers": {
+                    "type": "char",
+                    "length": 300
+                },
+                "ValueType": {
+                    "type": "char",
+                    "length": 50
+                },
+                "CustomMemberOptions": {
+                    "type": "char",
+                    "length": 200
+                }
+            }
+        },
+        "DIMCURRENCY": {
+            "table_name": "DIMCURRENCY",
+            "columns": {
+                "CurrencyKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "CurrencyAlternateKey": {
+                    "type": "char",
+                    "length": 3
+                },
+                "CurrencyName": {
+                    "type": "char",
+                    "length": 50
+                }
+            }
+        },
+        "DIMCUSTOMER": {
+            "table_name": "DIMCUSTOMER",
+            "columns": {
+                "CustomerKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "GeographyKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "CustomerAlternateKey": {
+                    "type": "char",
+                    "length": 15
+                },
+                "Title": {
+                    "type": "char",
+                    "length": 8
+                },
+                "FirstName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "MiddleName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "LastName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "NameStyle": {
+                    "type": "num",
+                    "length": 8
+                },
+                "BirthDate": {
+                    "type": "char",
+                    "length": 10
+                },
+                "MaritalStatus": {
+                    "type": "char",
+                    "length": 1
+                },
+                "Suffix": {
+                    "type": "char",
+                    "length": 10
+                },
+                "Gender": {
+                    "type": "char",
+                    "length": 1
+                },
+                "EmailAddress": {
+                    "type": "char",
+                    "length": 50
+                },
+                "YearlyIncome": {
+                    "type": "num",
+                    "length": 8
+                },
+                "TotalChildren": {
+                    "type": "num",
+                    "length": 8
+                },
+                "NumberChildrenAtHome": {
+                    "type": "num",
+                    "length": 8
+                },
+                "EnglishEducation": {
+                    "type": "char",
+                    "length": 40
+                },
+                "SpanishEducation": {
+                    "type": "char",
+                    "length": 40
+                },
+                "FrenchEducation": {
+                    "type": "char",
+                    "length": 40
+                },
+                "EnglishOccupation": {
+                    "type": "char",
+                    "length": 100
+                },
+                "SpanishOccupation": {
+                    "type": "char",
+                    "length": 100
+                },
+                "FrenchOccupation": {
+                    "type": "char",
+                    "length": 100
+                },
+                "HouseOwnerFlag": {
+                    "type": "char",
+                    "length": 1
+                },
+                "NumberCarsOwned": {
+                    "type": "num",
+                    "length": 8
+                },
+                "AddressLine1": {
+                    "type": "char",
+                    "length": 120
+                },
+                "AddressLine2": {
+                    "type": "char",
+                    "length": 120
+                },
+                "Phone": {
+                    "type": "char",
+                    "length": 20
+                },
+                "DateFirstPurchase": {
+                    "type": "char",
+                    "length": 10
+                },
+                "CommuteDistance": {
+                    "type": "char",
+                    "length": 15
+                }
+            }
+        },
+        "DIMDATE": {
+            "table_name": "DIMDATE",
+            "columns": {
+                "DateKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "FullDateAlternateKey": {
+                    "type": "char",
+                    "length": 10
+                },
+                "DayNumberOfWeek": {
+                    "type": "num",
+                    "length": 8
+                },
+                "EnglishDayNameOfWeek": {
+                    "type": "char",
+                    "length": 10
+                },
+                "SpanishDayNameOfWeek": {
+                    "type": "char",
+                    "length": 10
+                },
+                "FrenchDayNameOfWeek": {
+                    "type": "char",
+                    "length": 10
+                },
+                "DayNumberOfMonth": {
+                    "type": "num",
+                    "length": 8
+                },
+                "DayNumberOfYear": {
+                    "type": "num",
+                    "length": 8
+                },
+                "WeekNumberOfYear": {
+                    "type": "num",
+                    "length": 8
+                },
+                "EnglishMonthName": {
+                    "type": "char",
+                    "length": 10
+                },
+                "SpanishMonthName": {
+                    "type": "char",
+                    "length": 10
+                },
+                "FrenchMonthName": {
+                    "type": "char",
+                    "length": 10
+                },
+                "MonthNumberOfYear": {
+                    "type": "num",
+                    "length": 8
+                },
+                "CalendarQuarter": {
+                    "type": "num",
+                    "length": 8
+                },
+                "CalendarYear": {
+                    "type": "num",
+                    "length": 8
+                },
+                "CalendarSemester": {
+                    "type": "num",
+                    "length": 8
+                },
+                "FiscalQuarter": {
+                    "type": "num",
+                    "length": 8
+                },
+                "FiscalYear": {
+                    "type": "num",
+                    "length": 8
+                },
+                "FiscalSemester": {
+                    "type": "num",
+                    "length": 8
+                }
+            }
+        },
+        "DIMDEPARTMENTGROUP": {
+            "table_name": "DIMDEPARTMENTGROUP",
+            "columns": {
+                "DepartmentGroupKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ParentDepartmentGroupKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "DepartmentGroupName": {
+                    "type": "char",
+                    "length": 50
+                }
+            }
+        },
+        "DIMEMPLOYEE": {
+            "table_name": "DIMEMPLOYEE",
+            "columns": {
+                "EmployeeKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ParentEmployeeKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "EmployeeNationalIDAlternateKey": {
+                    "type": "char",
+                    "length": 15
+                },
+                "ParentEmployeeNationalIDAlternat": {
+                    "type": "char",
+                    "length": 15
+                },
+                "SalesTerritoryKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "FirstName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "LastName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "MiddleName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "NameStyle": {
+                    "type": "num",
+                    "length": 8
+                },
+                "Title": {
+                    "type": "char",
+                    "length": 50
+                },
+                "HireDate": {
+                    "type": "char",
+                    "length": 10
+                },
+                "BirthDate": {
+                    "type": "char",
+                    "length": 10
+                },
+                "LoginID": {
+                    "type": "char",
+                    "length": 256
+                },
+                "EmailAddress": {
+                    "type": "char",
+                    "length": 50
+                },
+                "Phone": {
+                    "type": "char",
+                    "length": 25
+                },
+                "MaritalStatus": {
+                    "type": "char",
+                    "length": 1
+                },
+                "EmergencyContactName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "EmergencyContactPhone": {
+                    "type": "char",
+                    "length": 25
+                },
+                "SalariedFlag": {
+                    "type": "num",
+                    "length": 8
+                },
+                "Gender": {
+                    "type": "char",
+                    "length": 1
+                },
+                "PayFrequency": {
+                    "type": "num",
+                    "length": 8
+                },
+                "BaseRate": {
+                    "type": "num",
+                    "length": 8
+                },
+                "VacationHours": {
+                    "type": "num",
+                    "length": 8
+                },
+                "SickLeaveHours": {
+                    "type": "num",
+                    "length": 8
+                },
+                "CurrentFlag": {
+                    "type": "num",
+                    "length": 8
+                },
+                "SalesPersonFlag": {
+                    "type": "num",
+                    "length": 8
+                },
+                "DepartmentName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "StartDate": {
+                    "type": "char",
+                    "length": 10
+                },
+                "EndDate": {
+                    "type": "char",
+                    "length": 10
+                },
+                "Status": {
+                    "type": "char",
+                    "length": 50
+                },
+                "EmployeePhoto": {
+                    "type": "char",
+                    "length": 1024
+                }
+            }
+        },
+        "DIMGEOGRAPHY": {
+            "table_name": "DIMGEOGRAPHY",
+            "columns": {
+                "GeographyKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "City": {
+                    "type": "char",
+                    "length": 30
+                },
+                "StateProvinceCode": {
+                    "type": "char",
+                    "length": 3
+                },
+                "StateProvinceName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "CountryRegionCode": {
+                    "type": "char",
+                    "length": 3
+                },
+                "EnglishCountryRegionName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "SpanishCountryRegionName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "FrenchCountryRegionName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "PostalCode": {
+                    "type": "char",
+                    "length": 15
+                },
+                "SalesTerritoryKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "IpAddressLocator": {
+                    "type": "char",
+                    "length": 15
+                }
+            }
+        },
+        "DIMORGANIZATION": {
+            "table_name": "DIMORGANIZATION",
+            "columns": {
+                "OrganizationKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ParentOrganizationKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "PercentageOfOwnership": {
+                    "type": "char",
+                    "length": 16
+                },
+                "OrganizationName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "CurrencyKey": {
+                    "type": "num",
+                    "length": 8
+                }
+            }
+        },
+        "DIMPRODUCT": {
+            "table_name": "DIMPRODUCT",
+            "columns": {
+                "ProductKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ProductAlternateKey": {
+                    "type": "char",
+                    "length": 25
+                },
+                "ProductSubcategoryKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "WeightUnitMeasureCode": {
+                    "type": "char",
+                    "length": 3
+                },
+                "SizeUnitMeasureCode": {
+                    "type": "char",
+                    "length": 3
+                },
+                "EnglishProductName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "SpanishProductName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "FrenchProductName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "StandardCost": {
+                    "type": "num",
+                    "length": 8
+                },
+                "FinishedGoodsFlag": {
+                    "type": "num",
+                    "length": 8
+                },
+                "Color": {
+                    "type": "char",
+                    "length": 15
+                },
+                "SafetyStockLevel": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ReorderPoint": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ListPrice": {
+                    "type": "num",
+                    "length": 8
+                },
+                "Size": {
+                    "type": "char",
+                    "length": 50
+                },
+                "SizeRange": {
+                    "type": "char",
+                    "length": 50
+                },
+                "Weight": {
+                    "type": "num",
+                    "length": 8
+                },
+                "DaysToManufacture": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ProductLine": {
+                    "type": "char",
+                    "length": 2
+                },
+                "DealerPrice": {
+                    "type": "num",
+                    "length": 8
+                },
+                "Class": {
+                    "type": "char",
+                    "length": 2
+                },
+                "Style": {
+                    "type": "char",
+                    "length": 2
+                },
+                "ModelName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "LargePhoto": {
+                    "type": "char",
+                    "length": 1024
+                },
+                "EnglishDescription": {
+                    "type": "char",
+                    "length": 400
+                },
+                "FrenchDescription": {
+                    "type": "char",
+                    "length": 400
+                },
+                "ChineseDescription": {
+                    "type": "char",
+                    "length": 400
+                },
+                "ArabicDescription": {
+                    "type": "char",
+                    "length": 400
+                },
+                "HebrewDescription": {
+                    "type": "char",
+                    "length": 400
+                },
+                "ThaiDescription": {
+                    "type": "char",
+                    "length": 400
+                },
+                "GermanDescription": {
+                    "type": "char",
+                    "length": 400
+                },
+                "JapaneseDescription": {
+                    "type": "char",
+                    "length": 400
+                },
+                "TurkishDescription": {
+                    "type": "char",
+                    "length": 400
+                },
+                "StartDate": {
+                    "type": "num",
+                    "length": 8
+                },
+                "EndDate": {
+                    "type": "num",
+                    "length": 8
+                },
+                "Status": {
+                    "type": "char",
+                    "length": 7
+                }
+            }
+        },
+        "DIMPRODUCTCATEGORY": {
+            "table_name": "DIMPRODUCTCATEGORY",
+            "columns": {
+                "ProductCategoryKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ProductCategoryAlternateKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "EnglishProductCategoryName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "SpanishProductCategoryName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "FrenchProductCategoryName": {
+                    "type": "char",
+                    "length": 50
+                }
+            }
+        },
+        "DIMPRODUCTSUBCATEGORY": {
+            "table_name": "DIMPRODUCTSUBCATEGORY",
+            "columns": {
+                "ProductSubcategoryKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ProductSubcategoryAlternateKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "EnglishProductSubcategoryName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "SpanishProductSubcategoryName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "FrenchProductSubcategoryName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "ProductCategoryKey": {
+                    "type": "num",
+                    "length": 8
+                }
+            }
+        },
+        "DIMPROMOTION": {
+            "table_name": "DIMPROMOTION",
+            "columns": {
+                "PromotionKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "PromotionAlternateKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "EnglishPromotionName": {
+                    "type": "char",
+                    "length": 255
+                },
+                "SpanishPromotionName": {
+                    "type": "char",
+                    "length": 255
+                },
+                "FrenchPromotionName": {
+                    "type": "char",
+                    "length": 255
+                },
+                "DiscountPct": {
+                    "type": "num",
+                    "length": 8
+                },
+                "EnglishPromotionType": {
+                    "type": "char",
+                    "length": 50
+                },
+                "SpanishPromotionType": {
+                    "type": "char",
+                    "length": 50
+                },
+                "FrenchPromotionType": {
+                    "type": "char",
+                    "length": 50
+                },
+                "EnglishPromotionCategory": {
+                    "type": "char",
+                    "length": 50
+                },
+                "SpanishPromotionCategory": {
+                    "type": "char",
+                    "length": 50
+                },
+                "FrenchPromotionCategory": {
+                    "type": "char",
+                    "length": 50
+                },
+                "StartDate": {
+                    "type": "num",
+                    "length": 8
+                },
+                "EndDate": {
+                    "type": "num",
+                    "length": 8
+                },
+                "MinQty": {
+                    "type": "num",
+                    "length": 8
+                },
+                "MaxQty": {
+                    "type": "num",
+                    "length": 8
+                }
+            }
+        },
+        "DIMRESELLER": {
+            "table_name": "DIMRESELLER",
+            "columns": {
+                "ResellerKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "GeographyKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ResellerAlternateKey": {
+                    "type": "char",
+                    "length": 15
+                },
+                "Phone": {
+                    "type": "char",
+                    "length": 25
+                },
+                "BusinessType": {
+                    "type": "char",
+                    "length": 20
+                },
+                "ResellerName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "NumberEmployees": {
+                    "type": "num",
+                    "length": 8
+                },
+                "OrderFrequency": {
+                    "type": "char",
+                    "length": 1
+                },
+                "OrderMonth": {
+                    "type": "num",
+                    "length": 8
+                },
+                "FirstOrderYear": {
+                    "type": "num",
+                    "length": 8
+                },
+                "LastOrderYear": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ProductLine": {
+                    "type": "char",
+                    "length": 50
+                },
+                "AddressLine1": {
+                    "type": "char",
+                    "length": 60
+                },
+                "AddressLine2": {
+                    "type": "char",
+                    "length": 60
+                },
+                "AnnualSales": {
+                    "type": "num",
+                    "length": 8
+                },
+                "BankName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "MinPaymentType": {
+                    "type": "num",
+                    "length": 8
+                },
+                "MinPaymentAmount": {
+                    "type": "num",
+                    "length": 8
+                },
+                "AnnualRevenue": {
+                    "type": "num",
+                    "length": 8
+                },
+                "YearOpened": {
+                    "type": "num",
+                    "length": 8
+                }
+            }
+        },
+        "DIMSALESREASON": {
+            "table_name": "DIMSALESREASON",
+            "columns": {
+                "SalesReasonKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "SalesReasonAlternateKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "SalesReasonName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "SalesReasonReasonType": {
+                    "type": "char",
+                    "length": 50
+                }
+            }
+        },
+        "DIMSALESTERRITORY": {
+            "table_name": "DIMSALESTERRITORY",
+            "columns": {
+                "SalesTerritoryKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "SalesTerritoryAlternateKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "SalesTerritoryRegion": {
+                    "type": "char",
+                    "length": 50
+                },
+                "SalesTerritoryCountry": {
+                    "type": "char",
+                    "length": 50
+                },
+                "SalesTerritoryGroup": {
+                    "type": "char",
+                    "length": 50
+                },
+                "SalesTerritoryImage": {
+                    "type": "char",
+                    "length": 1024
+                }
+            }
+        },
+        "DIMSCENARIO": {
+            "table_name": "DIMSCENARIO",
+            "columns": {
+                "ScenarioKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ScenarioName": {
+                    "type": "char",
+                    "length": 50
+                }
+            }
+        },
+        "FACTCALLCENTER": {
+            "table_name": "FACTCALLCENTER",
+            "columns": {
+                "FactCallCenterID": {
+                    "type": "num",
+                    "length": 8
+                },
+                "DateKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "WageType": {
+                    "type": "char",
+                    "length": 15
+                },
+                "Shift": {
+                    "type": "char",
+                    "length": 20
+                },
+                "LevelOneOperators": {
+                    "type": "num",
+                    "length": 8
+                },
+                "LevelTwoOperators": {
+                    "type": "num",
+                    "length": 8
+                },
+                "TotalOperators": {
+                    "type": "num",
+                    "length": 8
+                },
+                "Calls": {
+                    "type": "num",
+                    "length": 8
+                },
+                "AutomaticResponses": {
+                    "type": "num",
+                    "length": 8
+                },
+                "Orders": {
+                    "type": "num",
+                    "length": 8
+                },
+                "IssuesRaised": {
+                    "type": "num",
+                    "length": 8
+                },
+                "AverageTimePerIssue": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ServiceGrade": {
+                    "type": "num",
+                    "length": 8
+                },
+                "Date": {
+                    "type": "num",
+                    "length": 8
+                }
+            }
+        },
+        "FACTCURRENCYRATE": {
+            "table_name": "FACTCURRENCYRATE",
+            "columns": {
+                "CurrencyKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "DateKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "AverageRate": {
+                    "type": "num",
+                    "length": 8
+                },
+                "EndOfDayRate": {
+                    "type": "num",
+                    "length": 8
+                },
+                "Date": {
+                    "type": "num",
+                    "length": 8
+                }
+            }
+        },
+        "FACTFINANCE": {
+            "table_name": "FACTFINANCE",
+            "columns": {
+                "FinanceKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "DateKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "OrganizationKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "DepartmentGroupKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ScenarioKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "AccountKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "Amount": {
+                    "type": "num",
+                    "length": 8
+                },
+                "Date": {
+                    "type": "num",
+                    "length": 8
+                }
+            }
+        },
+        "FACTINTERNETSALES": {
+            "table_name": "FACTINTERNETSALES",
+            "columns": {
+                "ProductKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "OrderDateKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "DueDateKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ShipDateKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "CustomerKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "PromotionKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "CurrencyKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "SalesTerritoryKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "SalesOrderNumber": {
+                    "type": "char",
+                    "length": 20
+                },
+                "SalesOrderLineNumber": {
+                    "type": "num",
+                    "length": 8
+                },
+                "RevisionNumber": {
+                    "type": "num",
+                    "length": 8
+                },
+                "OrderQuantity": {
+                    "type": "num",
+                    "length": 8
+                },
+                "UnitPrice": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ExtendedAmount": {
+                    "type": "num",
+                    "length": 8
+                },
+                "UnitPriceDiscountPct": {
+                    "type": "num",
+                    "length": 8
+                },
+                "DiscountAmount": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ProductStandardCost": {
+                    "type": "num",
+                    "length": 8
+                },
+                "TotalProductCost": {
+                    "type": "num",
+                    "length": 8
+                },
+                "SalesAmount": {
+                    "type": "num",
+                    "length": 8
+                },
+                "TaxAmt": {
+                    "type": "num",
+                    "length": 8
+                },
+                "Freight": {
+                    "type": "num",
+                    "length": 8
+                },
+                "CarrierTrackingNumber": {
+                    "type": "char",
+                    "length": 25
+                },
+                "CustomerPONumber": {
+                    "type": "char",
+                    "length": 25
+                },
+                "OrderDate": {
+                    "type": "num",
+                    "length": 8
+                },
+                "DueDate": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ShipDate": {
+                    "type": "num",
+                    "length": 8
+                }
+            }
+        },
+        "FACTINTERNETSALESREASON": {
+            "table_name": "FACTINTERNETSALESREASON",
+            "columns": {
+                "SalesOrderNumber": {
+                    "type": "char",
+                    "length": 20
+                },
+                "SalesOrderLineNumber": {
+                    "type": "num",
+                    "length": 8
+                },
+                "SalesReasonKey": {
+                    "type": "num",
+                    "length": 8
+                }
+            }
+        },
+        "FACTPRODUCTINVENTORY": {
+            "table_name": "FACTPRODUCTINVENTORY",
+            "columns": {
+                "ProductKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "DateKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "MovementDate": {
+                    "type": "char",
+                    "length": 10
+                },
+                "UnitCost": {
+                    "type": "num",
+                    "length": 8
+                },
+                "UnitsIn": {
+                    "type": "num",
+                    "length": 8
+                },
+                "UnitsOut": {
+                    "type": "num",
+                    "length": 8
+                },
+                "UnitsBalance": {
+                    "type": "num",
+                    "length": 8
+                }
+            }
+        },
+        "FACTRESELLERSALES": {
+            "table_name": "FACTRESELLERSALES",
+            "columns": {
+                "ProductKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "OrderDateKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "DueDateKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ShipDateKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ResellerKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "EmployeeKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "PromotionKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "CurrencyKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "SalesTerritoryKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "SalesOrderNumber": {
+                    "type": "char",
+                    "length": 20
+                },
+                "SalesOrderLineNumber": {
+                    "type": "num",
+                    "length": 8
+                },
+                "RevisionNumber": {
+                    "type": "num",
+                    "length": 8
+                },
+                "OrderQuantity": {
+                    "type": "num",
+                    "length": 8
+                },
+                "UnitPrice": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ExtendedAmount": {
+                    "type": "num",
+                    "length": 8
+                },
+                "UnitPriceDiscountPct": {
+                    "type": "num",
+                    "length": 8
+                },
+                "DiscountAmount": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ProductStandardCost": {
+                    "type": "num",
+                    "length": 8
+                },
+                "TotalProductCost": {
+                    "type": "num",
+                    "length": 8
+                },
+                "SalesAmount": {
+                    "type": "num",
+                    "length": 8
+                },
+                "TaxAmt": {
+                    "type": "num",
+                    "length": 8
+                },
+                "Freight": {
+                    "type": "num",
+                    "length": 8
+                },
+                "CarrierTrackingNumber": {
+                    "type": "char",
+                    "length": 25
+                },
+                "CustomerPONumber": {
+                    "type": "char",
+                    "length": 25
+                },
+                "OrderDate": {
+                    "type": "num",
+                    "length": 8
+                },
+                "DueDate": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ShipDate": {
+                    "type": "num",
+                    "length": 8
+                }
+            }
+        },
+        "FACTSALESQUOTA": {
+            "table_name": "FACTSALESQUOTA",
+            "columns": {
+                "SalesQuotaKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "EmployeeKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "DateKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "CalendarYear": {
+                    "type": "num",
+                    "length": 8
+                },
+                "CalendarQuarter": {
+                    "type": "num",
+                    "length": 8
+                },
+                "SalesAmountQuota": {
+                    "type": "num",
+                    "length": 8
+                },
+                "Date": {
+                    "type": "num",
+                    "length": 8
+                }
+            }
+        },
+        "FACTSURVEYRESPONSE": {
+            "table_name": "FACTSURVEYRESPONSE",
+            "columns": {
+                "SurveyResponseKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "DateKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "CustomerKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ProductCategoryKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "EnglishProductCategoryName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "ProductSubcategoryKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "EnglishProductSubcategoryName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "Date": {
+                    "type": "num",
+                    "length": 8
+                }
+            }
+        },
+        "NEWFACTCURRENCYRATE": {
+            "table_name": "NEWFACTCURRENCYRATE",
+            "columns": {
+                "AverageRate": {
+                    "type": "num",
+                    "length": 8
+                },
+                "CurrencyID": {
+                    "type": "char",
+                    "length": 3
+                },
+                "CurrencyDate": {
+                    "type": "char",
+                    "length": 10
+                },
+                "EndOfDayRate": {
+                    "type": "num",
+                    "length": 8
+                },
+                "CurrencyKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "DateKey": {
+                    "type": "num",
+                    "length": 8
+                }
+            }
+        },
+        "PROSPECTIVEBUYER": {
+            "table_name": "PROSPECTIVEBUYER",
+            "columns": {
+                "ProspectiveBuyerKey": {
+                    "type": "num",
+                    "length": 8
+                },
+                "ProspectAlternateKey": {
+                    "type": "char",
+                    "length": 15
+                },
+                "FirstName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "MiddleName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "LastName": {
+                    "type": "char",
+                    "length": 50
+                },
+                "BirthDate": {
+                    "type": "num",
+                    "length": 8
+                },
+                "MaritalStatus": {
+                    "type": "char",
+                    "length": 1
+                },
+                "Gender": {
+                    "type": "char",
+                    "length": 1
+                },
+                "EmailAddress": {
+                    "type": "char",
+                    "length": 50
+                },
+                "YearlyIncome": {
+                    "type": "num",
+                    "length": 8
+                },
+                "TotalChildren": {
+                    "type": "num",
+                    "length": 8
+                },
+                "NumberChildrenAtHome": {
+                    "type": "num",
+                    "length": 8
+                },
+                "Education": {
+                    "type": "char",
+                    "length": 40
+                },
+                "Occupation": {
+                    "type": "char",
+                    "length": 100
+                },
+                "HouseOwnerFlag": {
+                    "type": "char",
+                    "length": 1
+                },
+                "NumberCarsOwned": {
+                    "type": "num",
+                    "length": 8
+                },
+                "AddressLine1": {
+                    "type": "char",
+                    "length": 120
+                },
+                "AddressLine2": {
+                    "type": "char",
+                    "length": 120
+                },
+                "City": {
+                    "type": "char",
+                    "length": 30
+                },
+                "StateProvinceCode": {
+                    "type": "char",
+                    "length": 3
+                },
+                "PostalCode": {
+                    "type": "char",
+                    "length": 15
+                },
+                "Phone": {
+                    "type": "char",
+                    "length": 20
+                },
+                "Salutation": {
+                    "type": "char",
+                    "length": 8
+                },
+                "Unknown": {
+                    "type": "num",
+                    "length": 8
+                }
+            }
+        }
+    }
+}

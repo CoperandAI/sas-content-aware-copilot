@@ -1,0 +1,30 @@
+{
+  "script_name": "ADV_SAS_ENV_SETUP.sas",
+  "description": "Sets up SAS environment including library assignments and macro variables.",
+  "steps": [
+    {
+      "step_number": 1,
+      "step_type": "LIBNAME Statement",
+      "description": "Assigns the SAS library to connect to the SQL Server database.",
+      "operations": ["Define LIBNAME for SQL Server connection"],
+      "dependencies": [],
+      "sas_code": "LIBNAME sas_dw OLEDB INIT_STRING='Provider=SQLOLEDB; Password=sas_user123; User ID=sas_user; Initial Catalog=AdventureWorksDW2022; Data Source=192.168.121.1;';"
+    },
+    {
+      "step_number": 2,
+      "step_type": "Macro Variable Definition",
+      "description": "Defines the macro variable for the reporting date.",
+      "operations": ["Set report_date based on system date"],
+      "dependencies": [],
+      "sas_code": "%LET report_date = %SYSFUNC(PUTN(TODAY(), YYMMDD10.));"
+    },
+    {
+      "step_number": 3,
+      "step_type": "File Path Configuration",
+      "description": "Configures paths for storing report output files.",
+      "operations": ["Define the output directory for reports"],
+      "dependencies": [],
+      "sas_code": "%LET report_path = '/sas_reports/';"
+    }
+  ]
+}

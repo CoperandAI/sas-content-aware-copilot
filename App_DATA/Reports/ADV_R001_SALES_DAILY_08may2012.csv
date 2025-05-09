@@ -1,0 +1,5 @@
+SalesOrderNumber,OrderDate,CustomerName,ProductName,OrderQuantity,SalesAmount
+SO48137,2012-05-08,Suzanne                                            Zhou,"Mountain-200 Silver, 38",1,"$2,071.42"
+SO48138,2012-05-08,Diane                                              Ruiz,"Road-250 Black, 44",1,"$2,181.56"
+SO48139,2012-05-08,Julio                                              Romero,"Road-250 Red, 52",1,"$2,443.35"
+SO48140,2012-05-08,Donna                                              Kumar,"Road-650 Red, 52",1,$782.99

@@ -1,27 +1,16 @@
-# Python
+# Python bytecode and cache
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-*.db
 
-# Environments
-.env
+# Virtual environments
 .venv/
-*.sqlite3
-*.log
+env/
+venv/
 
-# Logs and data
-App_DATA/Logs/
-App_DATA/Reports/
-App_DATA/Metadata/
-App_DATA/SAS_Files/
-Data/
-
-# IDEs/editors
-.vscode/
-.idea/
-
-# OS
+# OS/editor junk
 .DS_Store
 Thumbs.db
+*.swp
+

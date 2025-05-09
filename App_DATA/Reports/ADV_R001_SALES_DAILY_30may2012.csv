@@ -1,0 +1,12 @@
+SalesOrderNumber,OrderDate,CustomerName,ProductName,OrderQuantity,SalesAmount
+SO48400,2012-05-30,Whitney                                            Martinez,"Road-650 Red, 44",1,$782.99
+SO48401,2012-05-30,Karl                                               Stone,"Road-250 Black, 48",1,"$2,181.56"
+SO48402,2012-05-30,Dennis                                             Chen,"Road-250 Black, 58",1,"$2,181.56"
+SO48403,2012-05-30,Taylor                                             Hughes,"Road-550-W Yellow, 40",1,"$1,000.44"
+SO48404,2012-05-30,Walter                                             Suarez,"Road-250 Black, 52",1,"$2,181.56"
+SO48405,2012-05-30,Alejandro                                          Luo,"Mountain-200 Silver, 46",1,"$2,071.42"
+SO48406,2012-05-30,Abigail                                            Jenkins,"Road-650 Red, 44",1,$782.99
+SO48407,2012-05-30,Valerie                                            Lu,"Road-250 Black, 48",1,"$2,181.56"
+SO48408,2012-05-30,Jon                                                Guo,"Road-250 Black, 58",1,"$2,181.56"
+SO48409,2012-05-30,Briana                                             Ashe,"Road-250 Red, 52",1,"$2,443.35"
+SO48410,2012-05-30,Emily                                              Perry,"Mountain-200 Black, 38",1,"$2,049.10"

@@ -1,0 +1,137 @@
+{
+  "database": {
+    "name": "AdventureWorksDW2022",
+    "sas_library": "sas_dw",
+    "tables": {
+      "DimAccount": {
+        "source": "AdventureWorksDW2022.dbo.DimAccount",
+        "columns": {
+          "AccountKey": "Primary Key",
+          "ParentAccountKey": "Parent Account Reference",
+          "AccountDescription": "Account Description",
+          "AccountType": "Type of Account"
+        },
+        "constraints": {
+          "primary_key": "AccountKey",
+          "foreign_keys": {
+            "ParentAccountKey": "DimAccount.AccountKey"
+          }
+        },
+        "indexes": ["IX_AccountKey", "IX_ParentAccountKey"]
+      },
+      "DimCurrency": {
+        "source": "AdventureWorksDW2022.dbo.DimCurrency",
+        "columns": {
+          "CurrencyKey": "Primary Key",
+          "CurrencyAlternateKey": "Alternate Currency Code",
+          "CurrencyName": "Currency Name"
+        },
+        "constraints": {
+          "primary_key": "CurrencyKey"
+        },
+        "indexes": ["IX_CurrencyKey"]
+      },
+      "DimCustomer": {
+        "source": "AdventureWorksDW2022.dbo.DimCustomer",
+        "columns": {
+          "CustomerKey": "Primary Key",
+          "GeographyKey": "FK to DimGeography",
+          "CustomerAlternateKey": "Customer Identifier",
+          "FirstName": "Customer First Name",
+          "LastName": "Customer Last Name",
+          "EmailAddress": "Customer Email",
+          "DateFirstPurchase": "First Purchase Date"
+        },
+        "constraints": {
+          "primary_key": "CustomerKey",
+          "foreign_keys": {
+            "GeographyKey": "DimGeography.GeographyKey"
+          }
+        },
+        "indexes": ["IX_CustomerKey", "IX_EmailAddress"]
+      },
+      "DimEmployee": {
+        "source": "AdventureWorksDW2022.dbo.DimEmployee",
+        "columns": {
+          "EmployeeKey": "Primary Key",
+          "FirstName": "First Name",
+          "LastName": "Last Name",
+          "DepartmentName": "Department",
+          "HireDate": "Hire Date",
+          "BaseRate": "Base Salary"
+        },
+        "constraints": {
+          "primary_key": "EmployeeKey"
+        },
+        "indexes": ["IX_EmployeeKey", "IX_LastName"]
+      },
+      "FactInternetSales": {
+        "source": "AdventureWorksDW2022.dbo.FactInternetSales",
+        "columns": {
+          "SalesOrderNumber": "Sales Order Identifier",
+          "OrderDateKey": "FK to DimDate",
+          "CustomerKey": "FK to DimCustomer",
+          "ProductKey": "FK to DimProduct",
+          "SalesAmount": "Total Sale Amount"
+        },
+        "constraints": {
+          "foreign_keys": {
+            "OrderDateKey": "DimDate.DateKey",
+            "CustomerKey": "DimCustomer.CustomerKey",
+            "ProductKey": "DimProduct.ProductKey"
+          }
+        },
+        "indexes": ["IX_SalesOrderNumber", "IX_CustomerKey"]
+      }
+    }
+  },
+  "sas_environment": {
+    "libname": "LIBNAME sas_dw OLEDB INIT_STRING=\"Provider=SQLOLEDB; Password=sas_user123; User ID=sas_user; Initial Catalog=AdventureWorksDW2022; Data Source=192.168.121.1;\";",
+    "macros": {
+      "report_date": "%LET report_date = %SYSFUNC(PUTN(TODAY(), YYMMDD10.));"
+    }
+  },
+  "etl_staging": {
+    "FactInternetSales": "Extract data from SQL Server and filter using DimDate.FullDateAlternateKey",
+    "FactResellerSales": "Extract data related to reseller sales using OrderDateKey"
+  },
+  "report_workflow": {
+    "ADV_REPORT_DAILY_BATCH.sas": {
+      "runs": [
+        "ADV_STG_DAILY_BATCH.sas",
+        "ADV_R001_SALES_DAILY.sas",
+        "ADV_R002_PRODUCT_INVENTORY_DAILY.sas",
+        "ADV_R003_NEW_CUSTOMER_DAILY.sas",
+        "ADV_R004_RESELLERS_PERFORMANCE_DAILY.sas",
+        "ADV_R005_EMPL_SALES_PERFORMANCE_DAILY.sas"
+      ]
+    }
+  },
+  "report_analysis": {
+    "sales_report": {
+      "description": "Analyzes daily sales performance by customer and product.",
+      "key_metrics": ["Total Sales Amount", "Order Quantity"],
+      "dimensions": ["Customer", "Product", "Date"]
+    },
+    "inventory_report": {
+      "description": "Tracks daily inventory levels and stock movements.",
+      "key_metrics": ["Quantity On Hand", "Unit Cost"],
+      "dimensions": ["Product", "Date"]
+    },
+    "new_customers_report": {
+      "description": "Identifies new customers who made their first purchase on a given day.",
+      "key_metrics": ["New Customers Count"],
+      "dimensions": ["Customer Location", "Date"]
+    },
+    "reseller_report": {
+      "description": "Evaluates reseller sales performance based on order quantity and revenue.",
+      "key_metrics": ["Total Sales Amount", "Order Quantity"],
+      "dimensions": ["Reseller", "Date"]
+    },
+    "employee_report": {
+      "description": "Monitors employee sales performance against quotas.",
+      "key_metrics": ["Sales Amount Quota"],
+      "dimensions": ["Employee", "Department", "Date"]
+    }
+  }
+}

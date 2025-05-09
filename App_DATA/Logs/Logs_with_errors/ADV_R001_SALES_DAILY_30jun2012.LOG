@@ -1,0 +1,84 @@
+NOTE: PROCEDURE PRINTTO used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+24         
+25         /* Extract Sales Data */
+26         %LET report_date = %SYSFUNC(PUTN("&run_date"d, YYMMDD10.));
+27         
+28         %put &=report_date;
+REPORT_DATE=2012-06-30
+29         
+30         %put &=fff_date;
+WARNING: Apparent symbolic reference FFF_DATE not resolved.
+fff_date
+31         
+32         PROC SQL;
+33             CREATE TABLE work.sales_report AS
+34             SELECT
+35                 f.SalesOrderNumber,
+36                 d.FullDateAlternateKey AS OrderDate,
+2                                     The SAS System             20:38 Tuesday, May 1, 2012
+
+37                 c.FirstName || ' ' || c.LastName AS CustomerName,
+38                 p.EnglishProductName AS ProductName,
+39                 f.OrderQuantity,
+40                 f.SalesAmount
+41             FROM sas_dw.FactInternetSales f
+42             JOIN sas_dw.DimDate d ON f.OrderDateKey = d.DateKey
+43             JOIN sas_dw.DimCustomer c ON f.CustomerKey = c.CustomerKey
+44             JOIN sas_dw.DimProduct p ON f.ProductKey = p.ProductKey
+45             WHERE d.FullDateAlternateKey = "&report_date";
+ERROR: File SAS_DW.FACTINTERNETSALES.DATA does not exist.
+NOTE: PROC SQL set option NOEXEC and will continue to check the syntax of statements.
+46         	;
+47         QUIT;
+NOTE: The SAS System stopped processing this step because of errors.
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.06 seconds
+      
+48         
+49         
+50         
+51         /* Summary Statistics */
+
+
+52         PROC MEANS DATA=work.sales_report MEAN SUM MAXDEC=2;
+ERROR: File WORK.SALES_REPORT.DATA does not exist.
+53             VAR OrderQuantity SalesAmount;
+ERROR: No data set open to look up variables.
+ERROR: No data set open to look up variables.
+54         RUN;
+
+NOTE: The SAS System stopped processing this step because of errors.
+NOTE: PROCEDURE MEANS used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+55         
+56         /* Export to CSV */
+
+
+57         PROC EXPORT DATA=work.sales_report
+58             OUTFILE="&reportpath\ADV_R001_SALES_DAILY_&run_date..csv"
+59             DBMS=csv REPLACE;
+60             PUTNAMES=YES;
+61         RUN;
+
+ERROR: File WORK.SALES_REPORT.DATA does not exist. 
+ERROR: Export unsuccessful.  See SAS Log for details.
+NOTE: The SAS System stopped processing this step because of errors.
+NOTE: PROCEDURE EXPORT used (Total process time):
+      real time           0.05 seconds
+3                                     The SAS System             20:38 Tuesday, May 1, 2012
+
+      cpu time            0.04 seconds
+      
+62         
+
+
+63         PROC PRINTTO;
+64         RUN;
+

@@ -1,0 +1,35 @@
+{
+  "script_name": "ADV_R004_RESELLERS_PERFORMANCE_DAILY.sas",
+  "description": "Analyzes reseller sales performance for the reporting date.",
+  "steps": [
+    {
+      "step_number": 1,
+      "step_type": "PROC SQL",
+      "description": "Extract reseller sales data for the reporting date and join with reseller details.",
+      "input_sources": ["sas_dw.FactResellerSales", "sas_dw.DimReseller", "sas_dw.DimDate"],
+      "key_variables": ["ResellerKey", "SalesAmount", "OrderQuantity", "OrderDateKey"],
+      "operations": ["Filter reseller sales data for report_date", "Join with reseller details"],
+      "output": "WORK.reseller_sales",
+      "sas_code": "PROC SQL;\nCREATE TABLE WORK.reseller_sales AS\nSELECT r.ResellerKey, r.ResellerName, s.SalesAmount, s.OrderQuantity, d.FullDateAlternateKey\nFROM sas_dw.FactResellerSales s\nJOIN sas_dw.DimReseller r ON s.ResellerKey = r.ResellerKey\nJOIN sas_dw.DimDate d ON s.OrderDateKey = d.DateKey\nWHERE d.FullDateAlternateKey = '&report_date';\nQUIT;"
+    },
+    {
+      "step_number": 2,
+      "step_type": "PROC SORT",
+      "description": "Sort reseller sales data by SalesAmount in descending order.",
+      "input_sources": ["WORK.reseller_sales"],
+      "key_variables": ["SalesAmount"],
+      "operations": ["Sort reseller sales data in descending order"],
+      "output": "WORK.sorted_reseller_sales",
+      "sas_code": "PROC SORT DATA=WORK.reseller_sales OUT=WORK.sorted_reseller_sales;\nBY DESCENDING SalesAmount;\nRUN;"
+    },
+    {
+      "step_number": 3,
+      "step_type": "PROC EXPORT",
+      "description": "Export the reseller sales report to CSV format.",
+      "input_sources": ["WORK.sorted_reseller_sales"],
+      "output": "reseller_report.csv",
+      "export_format": "CSV",
+      "sas_code": "PROC EXPORT DATA=WORK.sorted_reseller_sales\nOUTFILE='reseller_report.csv'\nDBMS=CSV REPLACE;\nRUN;"
+    }
+  ]
+}
